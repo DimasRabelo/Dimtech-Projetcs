@@ -1,0 +1,332 @@
+.site {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  
+}
+
+body{
+  background-color: #1b4350;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+a {
+  font-family: "Oswald", sans-serif;
+}
+
+
+
+
+/* ********************* 
+    TOPO
+*************************/
+
+.topoContato {
+  background: #4182ad;
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header div ul {
+  display: flex;
+}
+
+header div a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header div a:nth-child(2) {
+  margin-left: -15%;
+}
+
+.topoRedeSocial li a {
+  background: url(../img/iconSocial.png) no-repeat;
+  padding: 12px 20px;
+  display: block;
+  /*  */
+  text-indent: -9999px;
+  /*  */
+  margin: 9px 10px 9px 0;
+}
+
+.topoRedeSocial li:nth-child(1) a {
+  background: url(../img/icones/iconeFacebook.svg) no-repeat;
+}
+
+.topoRedeSocial li:nth-child(2) a {
+  background: url(../img/icones/iconeInstagram.svg) no-repeat;
+}
+
+.topoRedeSocial li:nth-child(3) a {
+  background: url(../img/icones/iconeWhatsVerde.svg) no-repeat;
+}
+
+.topoRedeSocial li:last-child a {
+  margin-right: 0px;
+}
+
+/* Inicio do TOPO 02 */
+header div:nth-child(2) {
+  padding: 0.5% 0;
+}
+
+header div h1 {
+  background: url(../img/dimtech-logo.png) no-repeat;
+  background-size: contain; /* Faz a imagem se ajustar ao tamanho do elemento */
+  background-position: left center; /* Centraliza verticalmente */
+  width: 180px; /* ajuste aqui conforme desejar */
+  height: 80px; /* altura menor para reduzir o tamanho */
+  display: block;
+  text-indent: -9999px;
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 445px; /* aumenta a distância entre logo e menu */
+  padding: 15px 0;
+  
+}
+
+.logo h1 {
+  background: url(../img/dimtech-logo.png) no-repeat;
+  background-size: contain;
+  background-position: left center;
+  width: 280px;
+  height: 150px;
+  text-indent: -9999px;
+  margin: 0;
+}
+
+.menu ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li a {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-family: "Oswald", cursive;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-weight: bold;
+}
+
+.menu ul li a:hover,
+.menu ul li a.ativo {
+  color: #41905f;
+}
+
+/* 
+    Tutorial do Ventoy
+*/
+.banner {
+  width: 100%;
+  top: 100px;
+}
+.banner img {
+  width: 100%;
+}
+
+.banner .slick-prev:before,
+.banner .slick-next:before {
+  font-size: 40px;
+  color: #0c0c0c;
+}
+
+.banner .slick-prev {
+  z-index: 1;
+}
+
+.banner .slick-dots {
+  bottom: 25px;
+}
+
+.banner .slick-dots li {
+  margin: 0 20px;
+}
+
+.slick-dots li button:before {
+  font-size: 25px;
+  color: #413f3a;
+  top: 33px;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #c9b648;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+}
+h1,
+h2 {
+  color: #333;
+}
+pre {
+  background: #eee;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: baseline;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 0px;
+}
+
+.social-links img {
+  width: 50px; 
+  height: auto; 
+  transition: transform 0.5s ease-in-out; 
+}
+
+.social-links img:hover {
+  transform: scale(1.2); 
+}
+.redeSocial {
+  margin: 50px;
+}
+
+footer {
+  background-color: #4182ad;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.fade img {
+  width: 100%;
+  height: 80vh; /* altura fixa para o banner */
+  object-fit: cover; /* cobre todo o espaço do banner */
+}
+
+.fade .slick-next {
+  right: 40px;
+}
+
+.fade .slick-prev:before,
+.fade .slick-next:before {
+  font-size: 40px;
+  color: #f1c40f;
+}
+
+.fade .slick-prev {
+  left: 40px;
+  z-index: 1;
+}
+
+.fade .slick-dots {
+  bottom: 25px;
+}
+
+.fade .slick-dots li {
+  margin: 0 20px;
+}
+
+.slick-dots li button:before {
+  font-size: 40px;
+  color: #f1c40f;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #48c9b0;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+  gap: 20px;
+}
+
+
+.card {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Conteudos da página inicial embaixo do banner */
+
+.imagemC {
+  width: 300px; /* ou o tamanho que quiser */
+  height: auto;
+  display: block;
+}
+
+.texto {
+  position: absolute;
+  top: 10px; /* distância do topo */
+  left: 10px; /* distância da esquerda */
+  color: white;
+  background: rgba(0, 0, 0, 0.6); /* fundo para melhor leitura */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: "Oswald", sans-serif;
+}
+
+.conteudo {
+  max-width: 1000px; /* ou o tamanho ideal do seu conteúdo */
+  margin: 0 auto; /* centraliza horizontalmente */
+  text-align: center; /* centraliza o texto (opcional) */
+  padding: 20px;
+}
+
+.imagemTexto {
+  position: relative;
+}
+
+.imagemTexto img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.imagemTexto .texto,
+.imagemTexto .descricao {
+  position: absolute;
+  color: white;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+}
+
+.imagemTexto .texto {
+  top: 10px;
+  left: 10px;
+}
+
+.imagemTexto .descricao {
+  bottom: 10px;
+  left: 10px;
+}
+
+main {
+  background-color: #4182ad;
+}

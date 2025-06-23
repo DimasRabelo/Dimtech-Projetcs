@@ -1,0 +1,16 @@
+/*
+    ##########################
+    ### Tablets: 601 até 1000
+    ##########################
+*/
+@media (max-width: 1000px) {
+    .slick-dots {
+    display: none !important;
+  }
+
+  
+.banner  {
+    width: 78% ;
+    
+}  
+    } /* End of Tablets Media Query */
