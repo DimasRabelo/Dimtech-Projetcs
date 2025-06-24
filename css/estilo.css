@@ -138,6 +138,25 @@ header div h1 {
 .menu ul li a.ativo {
   color: #41905f;
 }
+.subMenu ul {
+    display: none;
+}
+
+.subMenu:hover ul {
+    z-index: 1;
+    display: block;
+    position: absolute;
+    margin-left: 15px;
+    background: rgba(0, 123, 255, 0.2);
+   
+}
+
+.subMenu ul li a {
+    color: #ffffff;
+    text-transform: capitalize;
+    font-size: 1.2em;
+}
+
 
 
 .container {
