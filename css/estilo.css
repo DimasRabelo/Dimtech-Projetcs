@@ -4,14 +4,11 @@
   margin: 0 auto;
 }
 
-
 body {
   opacity: 1;
   transition: opacity 0.8s ease;
-   background-color: #1b4350;
+  background-color: #1b4350;
 }
-
-
 
 body,
 h1,
@@ -50,7 +47,6 @@ header div a:nth-child(2) {
 }
 
 .topoRedeSocial li a {
- 
   padding: 5px 20px;
   display: block;
   /*  */
@@ -103,7 +99,7 @@ header div h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 632px; 
+  gap: 632px;
 }
 
 .logo h1 {
@@ -111,7 +107,7 @@ header div h1 {
   background-size: contain;
   background-position: left center;
   width: 159px;
-    height: 95px;
+  height: 95px;
   text-indent: -9999px;
   margin: 0;
 }
@@ -139,37 +135,72 @@ header div h1 {
   color: #41905f;
 }
 .subMenu ul {
-    display: none;
+  display: none;
 }
 
 .subMenu:hover ul {
-    z-index: 1;
-    display: block;
-    position: absolute;
-    margin-left: 15px;
-    background: rgba(0, 123, 255, 0.2);
-   
+  z-index: 1;
+  display: block;
+  position: absolute;
+  margin-left: 15px;
+  background: rgba(0, 123, 255, 0.2);
 }
 
 .subMenu ul li a {
-    color: #ffffff;
-    text-transform: capitalize;
-    font-size: 1.2em;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: 1.2em;
 }
 
+/* Página Sobre */
 
-
-.container {
-  max-width: 960px;
-  margin: auto;
-  padding: 20px;
-  background-color: white;
+.contSobre {
+  padding: 20px 0;
+  text-align: center;
 }
 
-pre {
-  background: #eee;
-  padding: 10px;
-  overflow-x: auto;
+.contSobre h2 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.8em;
+
+  margin-bottom: 20px;
+}
+
+.contSobre div div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contSobre div div div {
+  width: 48%;
+  padding: 0 25px;
+}
+
+.contSobre img {
+  width: 100%;
+  border-radius: 25px 0px 0px 25px;
+}
+
+.contSobre div div div:nth-child(1) {
+  padding-left: 25px;
+}
+
+.contSobre div div div:nth-child(2) {
+  flex-direction: column;
+  padding-right: 25px;
+  justify-content: space-between;
+  background: #1db1d0;
+  border-radius: 0px 50px 50px 0px;
+}
+
+.contSobre p {
+  text-align: justify;
+  color: #041e47;
+  font-size: 1.2em;
+  line-height: 1.8em;
+  text-indent: 2em;
+  margin-top: 3%;
 }
 
 .social-links {
@@ -281,14 +312,14 @@ footer {
 
 .botao {
   cursor: pointer;
- 
+
   padding: 12px 20px; /* aumenta o tamanho do botão */
-  border-radius: 8px;  /* deixa as pontas arredondadas */
-  border: none;        /* remove borda padrão, se houver */
-  font-size: 1rem;     /* pode ajustar o tamanho da fonte se quiser */
- background-color: #1d9bc1;
- font-weight: bold;
- text-decoration: none;
+  border-radius: 8px; /* deixa as pontas arredondadas */
+  border: none; /* remove borda padrão, se houver */
+  font-size: 1rem; /* pode ajustar o tamanho da fonte se quiser */
+  background-color: #1d9bc1;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .botao:hover {
