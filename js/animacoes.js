@@ -21,3 +21,6 @@ $('.fade').slick({
   fade: true,
   cssEase: 'linear'
 });
+
+/* WOW JS */
+new WOW().init();

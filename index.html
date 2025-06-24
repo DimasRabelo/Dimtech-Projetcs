@@ -13,6 +13,14 @@
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/slick-theme.css" />
     <link rel="stylesheet" href="css/reset.css" />
+
+    <link rel="stylesheet" href="css/lity.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <link rel="stylesheet" href="css/estilo.css" />
     <link rel="stylesheet" href="css/responsivo.css" />
   </head>
@@ -34,7 +42,7 @@
       <div class="site">
         <nav class="menu">
           <div class="logo">
-            <h1>DivTech</h1>
+            <h1 class="animate__animated animate__bounce">DivTech</h1>
           </div>
           <ul>
             <li><a href="">Início</a></li>
@@ -47,39 +55,33 @@
       </div>
     </header>
 
-    <section class="fade">
+    <section class="fade wow animate__animated animate__fadeInUp">
       <img src="img/img1.png" alt="Banner Tutorial-1" />
       <img src="img/img2.png" alt="Banner Tutorial-1" />
-      
+      <img src="img/img3.png" alt="Banner Tutorial-1" />
     </section>
     <main>
       <div class="site">
-        <section class="conteudo">
+        <section class="conteudo wow animate__animated animate__fadeInUp">
           <div class="card">
             <div class="imagemTexto">
-              <img class="imagemC" src="img/exemplo2.png" alt="Imagem" />
-              <h3 class="texto">Ventoy</h3>
-              <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed totam necessitatibus placeat impedit explicabo facilis nostrum ipsum, nisi nulla quibusdam recusandae tempore veniam mollitia eaque ad minima, illo esse modi.</p>
+              <img class="imagemC" src="img/ventoy.png" alt="Imagem" />
             </div>
-            <button>leia mais</button>
-          </div>
-
-         <div class="card">
-            <div class="imagemTexto">
-              <img class="imagemC" src="img/exemplo2.png" alt="Imagem" />
-              <h3 class="texto">Ventoy</h3>
-              <p class="descricao">Texto por cima da imagem</p>
-            </div>
-            <button>leia mais</button>
+            <button class="botao">leia mais</button>
           </div>
 
           <div class="card">
             <div class="imagemTexto">
-              <img class="imagemC" src="img/exemplo2.png" alt="Imagem" />
-              <h3 class="texto">Ventoy</h3>
-              <p class="descricao">Texto por cima da imagem</p>
+              <img class="imagemC" src="img/backup.png" alt="Imagem" />
             </div>
-            <button>leia mais</button>
+            <button class="botao">leia mais</button>
+          </div>
+
+          <div class="card">
+            <div class="imagemTexto">
+              <img class="imagemC" src="img/clonarHd.png" alt="Imagem" />
+            </div>
+            <button class="botao">leia mais</button>
           </div>
         </section>
       </div>
@@ -93,6 +95,8 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/lity.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/animacoes.js"></script>
   </body>
 </html>

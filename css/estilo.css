@@ -70,6 +70,14 @@ header div a:nth-child(2) {
   margin-right: 0px;
 }
 
+.topoRedeSocial {
+  transition: transform 0.3s ease;
+}
+
+.topoRedeSocial:hover {
+  transform: scale(1.1);
+}
+
 /* Inicio do TOPO 02 */
 header div:nth-child(2) {
   padding: 0.5% 0;
@@ -90,16 +98,15 @@ header div h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 445px; /* aumenta a distância entre logo e menu */
-  padding: 15px 0;
+  gap: 632px; 
 }
 
 .logo h1 {
   background: url(../img/dimtech-logo.png) no-repeat;
   background-size: contain;
   background-position: left center;
-  width: 280px;
-  height: 150px;
+  width: 159px;
+    height: 95px;
   text-indent: -9999px;
   margin: 0;
 }
@@ -174,10 +181,9 @@ footer {
 }
 
 .fade img {
-  
   height: auto;
   display: block;
-  background-size: cover; 
+  background-size: cover;
   object-fit: cover;
   background-position: center;
 }
@@ -230,23 +236,6 @@ footer {
 
 /* Conteudos da página inicial embaixo do banner */
 
-.imagemC {
-  width: 300px; /* ou o tamanho que quiser */
-  height: auto;
-  display: block;
-}
-
-.texto {
-  position: absolute;
-  top: 10px; /* distância do topo */
-  left: 10px; /* distância da esquerda */
-  color: white;
-  background: rgba(0, 0, 0, 0.6); /* fundo para melhor leitura */
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-family: "Oswald", sans-serif;
-}
-
 .conteudo {
   max-width: 1000px; /* ou o tamanho ideal do seu conteúdo */
   margin: 0 auto; /* centraliza horizontalmente */
@@ -254,33 +243,37 @@ footer {
   padding: 20px;
 }
 
-.imagemTexto {
-  position: relative;
-}
-
-.imagemTexto img {
-  width: 100%;
+.imagemC {
+  width: 300px; /* ou o tamanho que quiser */
+  height: auto;
   display: block;
-  border-radius: 8px;
+}
+.imagemC {
+  transition: transform 0.3s ease;
 }
 
-.imagemTexto .texto,
-.imagemTexto .descricao {
-  position: absolute;
-  color: white;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 5px;
+.imagemC:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.imagemTexto .texto {
-  top: 10px;
-  left: 10px;
+.botao {
+  cursor: pointer;
+  margin: 8px;
+  padding: 12px 20px; /* aumenta o tamanho do botão */
+  border-radius: 8px;  /* deixa as pontas arredondadas */
+  border: none;        /* remove borda padrão, se houver */
+  font-size: 1rem;     /* pode ajustar o tamanho da fonte se quiser */
+ background-color: #1d9bc1;
+ font-weight: bold;
 }
 
-.imagemTexto .descricao {
-  bottom: 10px;
-  left: 10px;
+.botao:hover {
+  background-color: #1d9bc1;
+  color: #ffffff;
+  transform: scale(1.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  font-weight: bold;
 }
 
 main {
