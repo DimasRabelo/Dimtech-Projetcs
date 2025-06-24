@@ -259,13 +259,14 @@ footer {
 
 .botao {
   cursor: pointer;
-  margin: 8px;
+ 
   padding: 12px 20px; /* aumenta o tamanho do botão */
   border-radius: 8px;  /* deixa as pontas arredondadas */
   border: none;        /* remove borda padrão, se houver */
   font-size: 1rem;     /* pode ajustar o tamanho da fonte se quiser */
  background-color: #1d9bc1;
  font-weight: bold;
+ text-decoration: none;
 }
 
 .botao:hover {
