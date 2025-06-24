@@ -24,3 +24,19 @@ $('.fade').slick({
 
 /* WOW JS */
 new WOW().init();
+
+
+
+
+document.querySelectorAll('.botao').forEach(function(botao) {
+    botao.addEventListener('click', function(event) {
+      event.preventDefault(); // Impede o redirecionamento imediato
+
+      const href = this.getAttribute('href');
+      document.body.classList.add('fade-out');
+
+      setTimeout(function() {
+        window.location.href = href;
+      }, 800); // tempo igual ao do transition
+    });
+  });

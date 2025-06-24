@@ -4,9 +4,14 @@
   margin: 0 auto;
 }
 
+
 body {
-  background-color: #1b4350;
+  opacity: 1;
+  transition: opacity 0.8s ease;
+   background-color: #1b4350;
 }
+
+
 
 body,
 h1,
@@ -45,7 +50,7 @@ header div a:nth-child(2) {
 }
 
 .topoRedeSocial li a {
-  background: url(../img/iconSocial.png) no-repeat;
+ 
   padding: 5px 20px;
   display: block;
   /*  */
@@ -133,6 +138,7 @@ header div h1 {
 .menu ul li a.ativo {
   color: #41905f;
 }
+
 
 .container {
   max-width: 960px;
@@ -279,4 +285,9 @@ footer {
 
 main {
   background-color: #4182ad;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.8s ease;
 }
