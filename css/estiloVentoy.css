@@ -62,16 +62,7 @@ section {
   width: 100%;
   margin: 0 auto;
 }
-.slick-dots li button:before {
-  font-size: 25px;
-  color: #413f3a;
-  top: 33px;
-}
 
-.slick-dots li.slick-active button:before {
-  opacity: 0.75;
-  color: #c9b648;
-}
 
 .container {
   max-width: 960px;
@@ -82,11 +73,7 @@ section {
 h1 {
   color: #ffffff;
 }
-pre {
-  background: #eee;
-  padding: 10px;
-  overflow-x: auto;
-}
+
 
 .social-links {
   display: flex;
