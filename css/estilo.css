@@ -293,7 +293,7 @@ footer {
   max-width: 1000px; /* ou o tamanho ideal do seu conteúdo */
   margin: 0 auto; /* centraliza horizontalmente */
   text-align: center; /* centraliza o texto (opcional) */
-  padding: 20px;
+  padding: 50px;
 }
 
 .imagemC {
