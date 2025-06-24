@@ -146,37 +146,8 @@ header div h1 {
   padding: 20px;
   background-color: white;
 }
-h1,
-h2 {
-  color: #333;
-}
-pre {
-  background: #eee;
-  padding: 10px;
-  overflow-x: auto;
-}
 
-.social-links {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: baseline;
-  justify-content: center;
-  gap: 40px;
-  margin-bottom: 0px;
-}
 
-.social-links img {
-  width: 50px;
-  height: auto;
-  transition: transform 0.5s ease-in-out;
-}
-
-.social-links img:hover {
-  transform: scale(1.2);
-}
-.redeSocial {
-  margin: 50px;
-}
 
 footer {
   background-color: #4182ad;
