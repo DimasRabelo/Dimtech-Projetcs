@@ -41,15 +41,20 @@ document.querySelectorAll('.botao').forEach(function(botao) {
  /* Menu do site Topo 1 e Topo 2*/
 
   
-    fetch("menu.html")
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById("menu").innerHTML = data;
-      });
+   fetch("menu.html")
+  .then(res => res.text())
+  .then(data => {
+    const menu = document.getElementById("menu");
+    menu.innerHTML = data;
+    menu.style.display = "block"; // Só exibe quando estiver pronto
+  });
+
 
   /* Rodapé do site */
-   fetch("rodape.html")
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById("rodape").innerHTML = data;
-    });
+  fetch("rodape.html")
+  .then(res => res.text())
+  .then(data => {
+    const rodape = document.getElementById("rodape");
+    rodape.innerHTML = data;
+    rodape.style.display = "block"; // Só exibe quando estiver pronto
+  });

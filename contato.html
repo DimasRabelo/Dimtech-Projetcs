@@ -1,9 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contato</title>
+    <title>Página Contato</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,12 +14,7 @@
     <link rel="stylesheet" href="css/reset.css" />
 
     <link rel="stylesheet" href="css/lity.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous"
-    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -30,81 +24,40 @@
     <link rel="stylesheet" href="css/responsivo.css" />
   </head>
   <body>
-    <header>
-      <div class="topoContato">
-        <!-- COMEÇO DO TOPO 01-->
-        <div class="site">
-          <a href="mailto:dimtech.2025@gmail.com">dimtech.2025@gmail.com</a>
-          <ul class="topoRedeSocial">
-            <li><a href="#" target="_blank">FACEBOOK</a></li>
-            <li><a href="#" target="_blank">INSTAGRAM</a></li>
-            <li><a href="#" target="_blank">WHATSAPP</a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- Fim DO TOPO 01-->
+    <div id="menu"></div>
 
-      <div class="site">
-        <nav class="menu">
-          <div class="logo">
-            <h1 class="animate__animated animate__bounce">DivTech</h1>
-          </div>
-          <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li class="subMenu">
-              <a href="">Serviços</a>
-              <ul>
-                <li><a href="#">Formatação</a></li>
-                <li><a href="#">Troca para SSD</a></li>
-                <li><a href="#">Backup</a></li>
-                <li><a href="#">Clonagem de HD</a></li>
-                <li><a href="#">Instalação de Sistemas</a></li>
-                <li><a href="#">Sistema Web</a></li>
-                <li><a href="#">Sistema de Gerenciamento</a></li>
-              </ul>
-            </li>
-            <li><a href="">Artigos</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <div class="site">
-     
-        <form class="form-contato" action="#" method="post">
-          <h2>Fale com a DimTech</h2>
+    
+    
+   <div class="contato-container site">
+  <form class="form-contato" action="#" method="post">
+    <h2>Fale com a DimTech</h2>
 
-          <label for="nome">Seu Nome:</label>
-          <input type="nome" id="nome" name="nome" required />
+    <label for="nome">Seu Nome:</label>
+    <input type="text" id="nome" name="nome" required />
 
-          <label for="assunto">Assunto:</label>
-          <input type="assunto" id="assunto" name="assunto" required />
+    <label for="assunto">Assunto:</label>
+    <input type="text" id="assunto" name="assunto" required />
 
-          <label for="email">Seu e-mail:</label>
-          <input type="email" id="email" name="email" required />
+    <label for="email">Seu e-mail:</label>
+    <input type="email" id="email" name="email" required />
 
-          <label for="mensagem">Sua mensagem:</label>
-          <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+    <label for="mensagem">Sua mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
 
-          <button type="submit">Enviar</button>
-        </form>
-      
-    </div>
-    <footer class="wow animate__animated animate__fadeInUp">
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/dimasrabelo/"
-          ><img class="icone2" src="img/linkedin_3991775.png" alt="Linkedin"
-        /></a>
+    <button type="submit">Enviar</button>
+  </form>
 
-        <a href="https://github.com/DimasRabelo"
-          ><img class="icone2" src="img/github_3291695.png" alt="Github"
-        /></a>
-      </div>
-      <p>
-        &copy; 2025 - Tutorial por Dimas Rabelo. Hospedado com GitHub Pages.
-      </p>
-    </footer>
+  <div class="imagem-contato">
+    <img src="img/foto-contato.png" alt="Imagem de contato" class="img-contato" />
+  </div>
+</div>
+
+    
+
+
+
+
+    <div id="rodape"></div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script
@@ -117,4 +70,10 @@
     <script src="js/wow.min.js"></script>
     <script src="js/animacoes.js"></script>
   </body>
+
+ 
+
+
+
+ 
 </html>

@@ -119,7 +119,7 @@
 /* Dots */
 .slick-dotted.slick-slider
 {
-    margin-bottom: 80px;
+    margin-bottom: 0;
 }
 
 .slick-dots
@@ -185,7 +185,7 @@
     line-height: 99px;
 
     position: absolute;
-    top: 0;
+    top: -215px;
     left: 0;
 
     width: 20px;

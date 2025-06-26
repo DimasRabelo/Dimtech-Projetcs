@@ -26,12 +26,12 @@
     <link rel="stylesheet" href="css/responsivo.css" />
   </head>
   
-<div id="menu"></div>
+
 
 
   <body>
 
-     
+     <div id="menu"></div>
 
     <header class="cabecalho">
       <img src="img/ventoy-logo.png" alt="Logo" class="logo animate__animated animate__bounce" />
@@ -123,19 +123,5 @@ Ventoy (Pendrive)
 
 
  
-<script>
-  fetch("menu.html")
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById("menu").innerHTML = data;
-    });
-</script>
 
-<script>
-  fetch("rodape.html")
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById("rodape").innerHTML = data;
-    });
-</script>
 </html>
