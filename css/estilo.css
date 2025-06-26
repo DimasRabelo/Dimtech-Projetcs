@@ -95,6 +95,18 @@ header div h1 {
   margin: 0;
 }
 
+/* MENU FIXO */
+.menufixo{
+    position: fixed;
+    z-index: 9999;
+    margin: 0 auto;
+    width: 100%;
+    top: 0;
+    background: rgba(255, 255, 255, 0.8);
+    animation: fadeIn 2s ease-in-out;
+}
+
+
 .menu {
   display: flex;
   justify-content: space-between;
@@ -338,3 +350,51 @@ main {
   opacity: 0;
   transition: opacity 0.8s ease;
 }
+
+/* Página de Contato */
+  .form-contato {
+            max-width: 500px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 24px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          }
+
+          .form-contato h2 {
+            margin-bottom: 16px;
+            color: #1d9bc1;
+            text-align: center;
+          }
+
+          .form-contato label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+          }
+
+          .form-contato input,
+          .form-contato textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            resize: vertical;
+          }
+
+          .form-contato button {
+            background-color: #1d9bc1;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+          }
+
+          .form-contato button:hover {
+            background-color: #157da1;
+          }
