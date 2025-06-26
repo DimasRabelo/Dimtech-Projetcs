@@ -38,15 +38,4 @@ document.querySelectorAll('.botao').forEach(function(botao) {
     });
   });
 
-  /* MENU FIXO */
-
-window.onscroll = function () {
-  let top = window.scrollY;
-
-  if(top > 1200){
-    document.getElementById("menufixo").classList.add("menufixo");
-  }else{
-    document.getElementById("menufixo").classList.remove("menufixo");
-  }   
-  
-}
+ 
