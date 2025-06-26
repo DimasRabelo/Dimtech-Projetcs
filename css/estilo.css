@@ -586,3 +586,39 @@ pre {
   font-size: 1em;
 }
 /* Fim do Ventoy tutorial */
+
+/* Página Formatacao */
+
+.formatacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+ 
+ 
+}
+
+.formarte {
+  width: 100%;
+}
+.formarte img {
+  width: 100%;
+}
+.formatetexto{
+  width: 100%;
+  padding: 20px;
+ 
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+}
+.formatetexto h1{
+  text-align: justify;
+    text-indent: 1.8em;
+    color: #157da1;
+    font-size: 1.2em;
+    width: 75%;
+    font-weight: 600;
+    margin: 2% auto;
+    line-height: 1.2em;
+}
