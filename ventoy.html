@@ -14,8 +14,6 @@
     />
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/slick-theme.css" />
-    <link rel="stylesheet" href="css/reset.css" />
-
 
     <link rel="stylesheet" href="css/lity.css" />
 
@@ -24,60 +22,21 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
-    <link rel="stylesheet" href="css/estilo.css" />
     <link rel="stylesheet" href="css/estiloVentoy.css" />
     <link rel="stylesheet" href="css/responsivo.css" />
   </head>
+  
+<div id="menu"></div>
+
+
   <body>
-    <header>
-      <div class="topoContato">
-        <!-- COMEÇO DO TOPO 01-->
-        <div class="site">
-          <a href="mailto:dimtech.2025@gmail.com">dimtech.2025@gmail.com</a>
-          <ul class="topoRedeSocial">
-            <li><a href="#" target="_blank">FACEBOOK</a></li>
-            <li><a href="#" target="_blank">INSTAGRAM</a></li>
-            <li><a href="#" target="_blank">WHATSAPP</a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- Fim DO TOPO 01-->
 
-      <div class="site">
-        <nav class="menu">
-          <div class="logo">
-            <h1 class="animate__animated animate__bounce">DivTech</h1>
-          </div>
-          <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li class="subMenu">
-              <a href="">Serviços</a>
-              <ul>
-                <li><a href="#">Formatação</a></li>
-                <li><a href="#">Troca para SSD</a></li>
-                <li><a href="#">Backup</a></li>
-                <li><a href="#">Clonagem de HD</a></li>
-                <li><a href="#">Instalação de Sistemas</a></li>
-                <li><a href="#">Sistema Web</a></li>
-                <li><a href="#">Sistema de Gerenciamento</a></li>
-              </ul>
-            </li>
-            <li><a href="">Artigos</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+     
 
-    <div class="cabecalho">
-      <img
-        src="img/ventoy-logo.png"
-        alt="Logo"
-        class="logo animate__animated animate__bounce"
-      />
+    <header class="cabecalho">
+      <img src="img/ventoy-logo.png" alt="Logo" class="logo animate__animated animate__bounce" />
       <h1>Como Executar ISOs com o Ventoy</h1>
-    </div>
+    </header>
 
     <section class="banner">
       <img src="img/Banner/banner1.png" alt="Banner Tutorial-1" />
@@ -151,20 +110,8 @@ Ventoy (Pendrive)
       </ul>
     </div>
 
-    <footer>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/dimasrabelo/"
-          ><img class="icone2" src="img/linkedin_3991775.png" alt="Linkedin"
-        /></a>
+    <div id="rodape"></div>
 
-        <a href="https://github.com/DimasRabelo"
-          ><img class="icone2" src="img/github_3291695.png" alt="Github"
-        /></a>
-      </div>
-      <p>
-        &copy; 2025 - Tutorial por Dimas Rabelo. Hospedado com GitHub Pages.
-      </p>
-    </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="js/slick.min.js"></script>
@@ -172,4 +119,23 @@ Ventoy (Pendrive)
     <script src="js/wow.min.js"></script>
     <script src="js/animacoes.js"></script>
   </body>
+
+
+
+ 
+<script>
+  fetch("menu.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("menu").innerHTML = data;
+    });
+</script>
+
+<script>
+  fetch("rodape.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("rodape").innerHTML = data;
+    });
+</script>
 </html>

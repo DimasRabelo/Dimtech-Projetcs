@@ -5,12 +5,7 @@ body {
   padding: 0;
   line-height: 1.6;
 }
-header {
-  background-color: #1b4350;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-}
+
 
 .cabecalho {
   display: flex;
@@ -25,10 +20,7 @@ header {
   height: auto;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 24px;
-}
+
 
 .banner {
   width: 100%;
@@ -64,42 +56,7 @@ section {
 }
 
 
-.container {
-  max-width: 960px;
-  margin: auto;
-  padding: 1px 10px;
-  background-color: white;
-}
-h1 {
-  color: #ffffff;
-}
 
 
-.social-links {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: baseline;
-  justify-content: center;
-  gap: 40px; /* Espaçamento entre os itens */
-  margin-bottom: 0px;
-}
 
-.social-links img {
-  width: 50px; /* Ajuste o tamanho das imagens */
-  height: auto; /* Mantém a proporção */
-  transition: transform 0.5s ease-in-out; /* Efeito suave */
-}
 
-.social-links img:hover {
-  transform: scale(1.2); /* Aumenta 20% do tamanho original */
-}
-.redeSocial {
-  margin: 50px;
-}
-footer {
-  background-color: #1b4350;
-  color: white;
-  text-align: center;
-  padding: 10px;
- 
-}
