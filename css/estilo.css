@@ -616,9 +616,10 @@ pre {
   text-align: justify;
     text-indent: 1.8em;
     color: #157da1;
-    font-size: 1.2em;
-    width: 75%;
+    font-size: 2.2em;
+    width: 100%;
     font-weight: 600;
-    margin: 2% auto;
+    margin: 11% 12px;
     line-height: 1.2em;
+     margin-top: -105px;
 }
