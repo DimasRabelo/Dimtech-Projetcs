@@ -352,6 +352,38 @@ main {
 
 /*fim do conteudo da página inicial embaixo do banner */
 
+/* Página de Serviços */
+
+.pagservicos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.pagservicos img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.pagservicos img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.pagdivimagens {
+  background-color: #ccc;
+}
+
+.textService {
+  color: #ffffff;
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 /* Página Artigos */
 
 .cards-container {
@@ -388,7 +420,7 @@ main {
 
 .card-conteudo {
   padding: 20px;
-  background-color: #ccc;;
+  background-color: #ccc;
 }
 
 .card-conteudo h3 {
@@ -474,7 +506,6 @@ main {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
- 
 }
 
 /* Fim da página de Contato */
@@ -590,8 +621,7 @@ pre {
 }
 /* Fim do Ventoy tutorial */
 
-/* Página Formatacao *//* Página Troca SSD *//* Página Backup */
-
+/* Página Formatacao */ /* Página Troca SSD */ /* Página Backup */
 
 .servicos {
   display: flex;
@@ -625,21 +655,18 @@ pre {
   margin-top: -140px;
 }
 
-.destaqueTitulo{
-  margin-top: 0 !important;
-  
-}
-.clonagem {   
+.destaqueTitulo {
   margin-top: 0 !important;
 }
-
+.clonagem {
+  margin-top: 0 !important;
+}
 
 .troca-ssd {
   margin-top: 0 !important;
 }
 
 /* Página Artigos */
-
 
 /* base */
 .noticiaCards {
@@ -648,7 +675,7 @@ pre {
   padding: 30px;
   background-color: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   font-family: "Oswald", sans-serif;
   color: #333;
   text-align: center;
@@ -841,4 +868,3 @@ article p {
   margin-bottom: 8px;
   list-style-type: disc;
 }
-
