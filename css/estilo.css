@@ -308,7 +308,7 @@ footer {
 }
 
 .imagemC {
-  width: 300px; 
+  width: 300px;
   height: auto;
   display: block;
 }
@@ -580,46 +580,57 @@ pre {
   background-color: #f4f4f4;
   padding: 15px;
   border-radius: 8px;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
   overflow-x: auto;
   margin-bottom: 30px;
   font-size: 1em;
 }
 /* Fim do Ventoy tutorial */
 
-/* Página Formatacao */
+/* Página Formatacao *//* Página Troca SSD *//* Página Backup */
 
-.formatacao {
+
+.servicos {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
- 
- 
+  background-color: #ccc;
 }
 
-.formarte {
+.servicosimg {
   width: 100%;
 }
-.formarte img {
+.servicosimg img {
   width: 100%;
 }
-.formatetexto{
+.servicostexto {
   width: 100%;
   padding: 20px;
- 
+
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-
 }
-.formatetexto h1{
+.servicostexto h1 {
   text-align: justify;
-    text-indent: 1.8em;
-    color: #157da1;
-    font-size: 2.2em;
-    width: 100%;
-    font-weight: 600;
-    margin: 11% 12px;
-    line-height: 1.2em;
-     margin-top: -105px;
+  text-indent: 1.8em;
+  color: #294f5c;
+  font-size: 2.2em;
+  width: 100%;
+  font-weight: 600;
+  margin: 10% 12px;
+  line-height: 1.2em;
+  margin-top: -140px;
+}
+
+.destaqueTitulo{
+  margin-top: 0 !important;
+  
+}
+.clonagem {   
+  margin-top: 0 !important;
+}
+
+
+.troca-ssd {
+  margin-top: 0 !important;
 }
