@@ -206,6 +206,18 @@ header div h1 {
   margin-top: 3%;
 }
 
+
+
+/* fim da página Sobre */
+
+/* Inicio Rodapé */
+footer {
+  background-color: #1b4350;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 5px;
+}
 .social-links {
   display: flex;
   flex-direction: row-reverse;
@@ -226,17 +238,6 @@ header div h1 {
 }
 .redeSocial {
   margin: 50px;
-}
-
-/* fim da página Sobre */
-
-/* Inicio Rodapé */
-footer {
-  background-color: #1b4350;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  margin-top: 5px;
 }
 
 /* Fim do Rodapé */
