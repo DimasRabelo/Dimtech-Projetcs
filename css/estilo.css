@@ -634,3 +634,208 @@ pre {
 .troca-ssd {
   margin-top: 0 !important;
 }
+
+/* Página Artigos */
+
+
+/* base */
+.noticiaCards {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: "Oswald", sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.noticiaCards h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #0b3d91;
+}
+
+.noticiaCards .subtitulo {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+article {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 30px;
+  font-family: "Oswald", sans-serif;
+}
+
+article p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+/* problema */
+.problema {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+}
+
+.problema h2 {
+  font-size: 1.5rem;
+  color: #b30000;
+  margin-bottom: 10px;
+}
+
+.problema p {
+  margin-bottom: 10px;
+}
+
+.problema ul {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.problema ul li {
+  margin-bottom: 8px;
+  list-style-type: disc;
+}
+
+/* conceito */
+.conceito {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #eef6ff;
+  border-radius: 10px;
+}
+
+.conceito h2 {
+  font-size: 1.5rem;
+  color: #0b3d91;
+  margin-bottom: 10px;
+}
+
+.conceito ul {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.conceito ul li {
+  margin-bottom: 8px;
+  list-style-type: disc;
+}
+
+.conceito p strong {
+  color: #0b3d91;
+}
+
+/* tipos */
+.tipos {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.tipos h2 {
+  font-size: 1.5rem;
+  color: #0b3d91;
+  margin-bottom: 10px;
+}
+
+.tipos h3 {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  color: #003366;
+}
+
+.tipos p {
+  margin-bottom: 10px;
+}
+
+/* automacao */
+.automacao {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+}
+
+.automacao h2 {
+  font-size: 1.5rem;
+  color: #0b3d91;
+  margin-bottom: 10px;
+}
+
+.automacao ul {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.automacao ul li {
+  margin-bottom: 8px;
+  list-style-type: disc;
+}
+
+.automacao p strong {
+  color: #0b3d91;
+}
+
+/* casos */
+.casos {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #fff7f7;
+  border-radius: 10px;
+}
+
+.casos h2 {
+  font-size: 1.5rem;
+  color: #b30000;
+  margin-bottom: 10px;
+}
+
+.casos ul {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.casos ul li {
+  margin-bottom: 8px;
+  list-style-type: disc;
+}
+
+/* dimtech-ajuda */
+.dimtech-ajuda {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #e6f7ff;
+  border-radius: 10px;
+}
+
+.dimtech-ajuda h2 {
+  font-size: 1.5rem;
+  color: #0b3d91;
+  margin-bottom: 10px;
+}
+
+.dimtech-ajuda ul {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.dimtech-ajuda ul li {
+  margin-bottom: 8px;
+  list-style-type: disc;
+}
+
