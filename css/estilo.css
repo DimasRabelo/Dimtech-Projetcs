@@ -388,6 +388,7 @@ main {
 
 .card-conteudo {
   padding: 20px;
+  background-color: #ccc;;
 }
 
 .card-conteudo h3 {
@@ -416,7 +417,7 @@ main {
   flex: 1;
   max-width: 500px;
   margin: 0 auto;
-  background: #fff;
+  background: #ccc;
   padding: 24px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -426,6 +427,8 @@ main {
   margin-bottom: 16px;
   color: #1d9bc1;
   text-align: center;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .form-contato label {
@@ -471,7 +474,7 @@ main {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+ 
 }
 
 /* Fim da página de Contato */
