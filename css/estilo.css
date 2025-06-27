@@ -354,27 +354,57 @@ main {
 
 /* Página de Serviços */
 
-.pagservicos {
+.servicos-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  padding: 20px;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
 }
-.pagservicos img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
+
+.servico-box {
+  width: 300px;
+  text-align: center;
+  border: 1px solid #ddd;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-.pagservicos img:hover {
-  transform: scale(1.05);
+  background: #ccc;
+  padding: 1rem;
   transition: transform 0.3s ease;
 }
 
-.pagdivimagens {
-  background-color: #ccc;
+.servico-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.servico-box:hover {
+  transform: translateY(-5px);
+}
+
+.servico-box h3 {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.servico-box p {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.servico-box a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background-color: #1b5b99;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.servico-box a:hover {
+  background-color: #08345c;
 }
 
 .textService {
@@ -656,7 +686,7 @@ pre {
 }
 
 .destaqueTitulo {
-  margin-top: 0 !important;
+ margin-top: -199px !important;
 }
 .clonagem {
   margin-top: 0 !important;
