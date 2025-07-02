@@ -69,5 +69,24 @@
     <script src="js/lity.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/animacoes.js" defer></script>
+
+     <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll(".menu ul li a");
+    let currentPage = window.location.pathname.split("/").pop();
+
+    if (currentPage === "") {
+      currentPage = "index.html"; // ajuste aqui se seu arquivo principal tiver outro nome
+    }
+
+    links.forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("ativo");
+      } else {
+        link.classList.remove("ativo");
+      }
+    });
+  });
+</script>
   </body>
 </html>

@@ -136,7 +136,10 @@ header div h1 {
 .menu ul li a:hover,
 .menu ul li a.ativo {
   color: #41905f;
+  font-weight: bold;
 }
+
+
 .subMenu ul {
   display: none;
 }
