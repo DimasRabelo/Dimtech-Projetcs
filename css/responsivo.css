@@ -13,4 +13,38 @@
     width: 78% ;
     
 }  
-    } /* End of Tablets Media Query */
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+
+/* Página Sobre */
+ .contSobre div div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contSobre div div div {
+    width: 90%;
+    padding: 10px 0;
+  }
+
+  .contSobre img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px; /* arredondamento mais neutro para mobile */
+  }
+
+  .contSobre div div div:nth-child(2) {
+    border-radius: 0 0 20px 20px;
+    padding: 15px;
+  }
+}
+
+
+
+ /* End of Tablets Media Query */
