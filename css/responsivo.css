@@ -63,8 +63,12 @@
     align-items: center;
     gap: 10px; /* espaço entre os itens */
   }
-}
 
+    .slick-prev,
+  .slick-next {
+    display: none !important;
+}
+}
 
   
 
@@ -78,7 +82,7 @@
     display: none !important;
   }
 
-/* BOTÃO DO MENU MOBILE */
+
 
 .menu {
     padding: 5px 33px;
@@ -88,7 +92,9 @@
 .banner  {
     width: 80% ;
     
-}  
+} 
+
+
 
 .conteudo{
     display: flex;
@@ -109,6 +115,8 @@
     padding: 10px 5px;
   }
 
+
+
   .contSobre img {
     width: 100%;
     height: auto;
@@ -119,6 +127,9 @@
     border-radius:  20px 20px;
     padding: 15px;
   }
+  .contSobre div div div:nth-child(1) {
+  padding-left: 3px;
+}
 }
 
 
