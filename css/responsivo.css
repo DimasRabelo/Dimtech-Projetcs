@@ -13,30 +13,27 @@
     align-items: center;
     padding: 20px;
   }
-  .banner {
-    width: 100% !important; /* Ocupa toda a largura disponível */
-    height: auto;           /* Mantém a proporção da imagem */
-    max-height: 300px;      /* Define uma altura maior, ajustável */
+
+
+.fade img {
+  height: 215px;
+}
+
+  .logo {
+    width: 100%;
   }
 
-  .banner img {
-    width: 100%;
-    height: auto;
-    object-fit: cover; /* Garante que a imagem preencha a área */
+  .slick-prev,
+  .slick-next {
+    display: none !important;
   }
-
- .logo {
-    width: 100%;
- }
-.slick-prev, .slick-next {
-    display: none !important; /* Esconde os botões de navegação do slider */
-  }
+}
 
  
 
 
 
-}
+
 
 
 
