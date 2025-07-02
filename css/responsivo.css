@@ -36,6 +36,12 @@
    margin: 4px 10px;
   }
 
+  .tituloVent{
+    margin-left: -48px;
+  }
+
+
+
   .problema{
   margin: 4px 10px;
   }
@@ -179,6 +185,12 @@
   .contSobre div div div:nth-child(1) {
     padding-left: 3px;
   }
+  .banner{
+    max-width: 100%;
+  width: 100%; 
 }
+}
+
+
 
 /* End of Tablets Media Query */
