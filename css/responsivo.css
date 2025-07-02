@@ -27,6 +27,22 @@
   .slick-next {
     display: none !important;
   }
+
+  .noticia-card {
+    flex-direction: column;   /* empilha imagem e texto */
+    align-items: center;      /* centraliza o conteúdo */
+  }
+
+  .noticia-card img {
+    width: 100%;              /* ocupa 100% do card */
+    height: auto;             /* altura automática */
+    object-fit: contain;      /* mostra a imagem inteira sem cortes */
+  }
+
+  .card-conteudo {
+    padding: 10px;
+    text-align: center;
+  }
 }
 
  
