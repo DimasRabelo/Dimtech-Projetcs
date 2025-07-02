@@ -4,6 +4,27 @@
     ### Smartphones: 0 até 600
     ##########################
 */
+@media (max-width: 600px) {
+  .site {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centraliza a logo e o menu */
+  }
+
+  .logo {
+    margin-bottom: 10px; /* espaço entre logo e menu */
+  }
+
+  .menu {
+    justify-content: center; /* centraliza o menu horizontalmente */
+  }
+
+  .menu ul {
+    flex-direction: column; /* empilha os itens do menu se quiser em coluna */
+    align-items: center;
+    gap: 10px; /* espaço entre os itens */
+  }
+}
 
 
   
