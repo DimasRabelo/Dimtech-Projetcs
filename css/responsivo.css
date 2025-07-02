@@ -28,7 +28,11 @@
  .logo {
     width: 100%;
  }
+.slick-prev, .slick-next {
+    display: none !important; /* Esconde os botões de navegação do slider */
+  }
 
+ 
 
 
 
