@@ -100,10 +100,10 @@ header div h1 {
 
 .menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  gap: 632px;
 }
+
 
 .logo h1 {
   background: url(../img/dimtech-logo.png) no-repeat;

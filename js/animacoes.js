@@ -59,16 +59,4 @@ document.querySelectorAll('.botao').forEach(function(botao) {
     rodape.style.display = "block"; // Só exibe quando estiver pronto
   });
 
-  /* MENU MOBILE */
- document.addEventListener("DOMContentLoaded", () => {
-    const abrirMenu = document.querySelector(".abrir-menu");
-    const fecharMenu = document.querySelector(".fechar-menu");
-
-    abrirMenu.addEventListener("click", () => {
-      document.documentElement.classList.add("menu-mobile");
-    });
-
-    fecharMenu.addEventListener("click", () => {
-      document.documentElement.classList.remove("menu-mobile");
-    });
-  });
+ 

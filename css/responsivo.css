@@ -18,7 +18,13 @@
     display: none !important;
   }
 
-  
+/* BOTÃO DO MENU MOBILE */
+
+.menu {
+    padding: 5px 33px;
+}
+
+
 .banner  {
     width: 80% ;
     
