@@ -43,6 +43,10 @@
     padding: 10px;
     text-align: center;
   }
+
+  .menu ul li a:active {
+  color: #41905f;
+}
 }
 
  
