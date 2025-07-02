@@ -134,6 +134,10 @@
   .slick-next {
     display: none !important;
   }
+  .container{
+    margin: 0px 5px;
+    padding: 55px;
+  }
 }
 
 /*
@@ -189,6 +193,9 @@
     max-width: 100%;
   width: 100%; 
 }
+
+ 
+
 }
 
 
