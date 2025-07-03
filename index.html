@@ -31,30 +31,31 @@
      <div id="menu"></div>
 
     <section class="fade wow animate__animated animate__fadeInUp">
-      <img src="img/img0.png" alt="Banner Tutorial-1" />
-      <img src="img/img2.png" alt="Banner Tutorial-1" />
-      <img src="img/img3.png" alt="Banner Tutorial-1" />
+      <img src="img/img0.png" alt="Banner divulgando serviços de marketing digital" />
+      <img src="img/img2.png" alt="Banner promocional destacando soluções em tecnologia" />
+      <img src="img/img3.png" alt="Banner com chamada para consultoria em TI" />
     </section>
+
     <main>
       <div class="site">
         <section class="conteudo wow animate__animated animate__fadeInUp">
           <div class="card">
             <div class="imagemTexto">
-              <img class="imagemC" src="img/ventoy.png" alt="Imagem" />
+              <img class="imagemC" src="img/ventoy.png" alt="Logo do Ventoy, software para criar pendrives bootáveis" />
             </div>
             <a class="botao" href="ventoy.html">leia mais</a>
           </div>
 
           <div class="card">
             <div class="imagemTexto">
-              <img class="imagemC" src="img/backup.png" alt="Imagem" />
+              <img class="imagemC" src="img/backup.png" alt="Ilustração representando backup de dados no Windows" />
             </div>
             <a class="botao" href="backupwindows.html">leia mais</a>
           </div>
 
           <div class="card">
             <div class="imagemTexto">
-              <img class="imagemC" src="img/clonarHd.png" alt="Imagem" />
+              <img class="imagemC" src="img/clonarHd.png" alt="Gráfico ilustrativo de clonagem de disco rígido" />
             </div>
             <a class="botao" href="clonehd.html">leia mais</a>
           </div>
@@ -62,7 +63,7 @@
       </div>
     </main>
 
-    <div id="rodape" style="display: none"></div>
+    <div id="rodape"></div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="js/slick.min.js"></script>
@@ -70,23 +71,7 @@
     <script src="js/wow.min.js"></script>
     <script src="js/animacoes.js" defer></script>
 
-     <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const links = document.querySelectorAll(".menu ul li a");
-    let currentPage = window.location.pathname.split("/").pop();
-
-    if (currentPage === "") {
-      currentPage = "index.html"; // ajuste aqui se seu arquivo principal tiver outro nome
-    }
-
-    links.forEach(link => {
-      if (link.getAttribute("href") === currentPage) {
-        link.classList.add("ativo");
-      } else {
-        link.classList.remove("ativo");
-      }
-    });
-  });
+ 
 </script>
   </body>
 </html>
