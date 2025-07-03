@@ -609,6 +609,11 @@ main {
   text-align: left;
 }
 
+.mainVentoy{
+  background-color: #1b4350;
+  
+}
+
 .tituloVent,
 .container h2 {
   font-size: 2em;
