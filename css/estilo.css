@@ -727,9 +727,13 @@ pre {
   font-size: 2.2em;
   width: 100%;
   font-weight: 600;
-  margin: 10% 12px;
+  margin: 10px 12px;
   line-height: 1.2em;
-  margin-top: -140px;
+ 
+}
+
+.h1serve{
+    padding-bottom: 66px;
 }
 
 .destaqueTitulo {

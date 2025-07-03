@@ -96,8 +96,8 @@ figure.servicosimg figcaption {
   .servicosimg img {
     max-width: 100%;
     height: auto;
-    display: inline-block;
-  }
+    object-fit: contain;
+}
   .servicos h1 {
     margin-top: 10px;
     font-size: 1.6rem;
@@ -113,6 +113,8 @@ figure.servicosimg figcaption {
 }
 
 @media (max-width: 600px) {
+  
+  
   .site {
     display: flex;
     flex-direction: column;
@@ -140,6 +142,71 @@ figure.servicosimg figcaption {
     margin: 0px 5px;
     padding: 55px;
   }
+
+  .servicos{
+   flex-direction: column-reverse;
+   margin: auto 12px;
+   border-radius: 5px 5px;
+  }
+  figure.servicosimg figcaption {
+    display: none;
+  }
+
+  .mainResponsive{
+    background-color: #1b4350;
+  }
+
+
+
+  
+
+  .servicosimg img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Isso ajuda a manter a proporção sem distorcer */
+}
+
+  /* Ajustes nos textos */
+  .servicostexto p,
+  .servicostexto h2,
+  .servicostexto ul {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Ajustes do título */
+  .h1serve {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  /* Ajustar o alinhamento das listas */
+  .servicostexto ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 0.9rem;
+  }
+
+  /* Ajuste do espaço nas laterais das imagens */
+  .servicosimg img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Ajustes nos botões de ação */
+  .acoes-servico .btn-cta {
+    width: 80%;
+    margin: 0 10px;
+  }
+
+
+
+
+
+
 }
 
 /*
@@ -150,6 +217,13 @@ figure.servicosimg figcaption {
 @media (max-width: 1000px) {
   .slick-dots {
     display: none !important;
+  }
+
+  .topoRedeSocial{
+    padding: 0px 15px;
+  }
+  .email{
+    padding: 0px 15px;
   }
 
   .menu {
@@ -196,6 +270,60 @@ figure.servicosimg figcaption {
   width: 100%; 
 }
 
+ .servicos{
+   flex-direction: column-reverse;
+   margin: auto 12px;
+   border-radius: 5px 5px;
+  }
+  figure.servicosimg figcaption {
+    display: none;
+  }
+
+  .mainResponsive{
+    background-color: #1b4350;
+  }
+
+   .servicosimg img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Isso ajuda a manter a proporção sem distorcer */
+}
+
+  /* Ajustes nos textos */
+  .servicostexto p,
+  .servicostexto h2,
+  .servicostexto ul {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Ajustes do título */
+  .h1serve {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  /* Ajustar o alinhamento das listas */
+  .servicostexto ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 0.9rem;
+  }
+
+  /* Ajuste do espaço nas laterais das imagens */
+  .servicosimg img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Ajustes nos botões de ação */
+  .acoes-servico .btn-cta {
+    width: 80%;
+    margin: 0 10px;
+  }
  
 
 }
