@@ -301,7 +301,10 @@ figure.servicosimg figcaption {
   .h1serve {
     font-size: 1.5rem;
     text-align: center;
+    box-sizing: border-box;
+    margin: 14px -1px;
   }
+
 
   /* Ajustar o alinhamento das listas */
   .servicostexto ul {
@@ -309,7 +312,7 @@ figure.servicosimg figcaption {
     margin-left: 20px;
     font-size: 0.9rem;
   }
-
+   
   /* Ajuste do espaço nas laterais das imagens */
   .servicosimg img {
     width: 100%;
@@ -325,6 +328,16 @@ figure.servicosimg figcaption {
     margin: 0 10px;
   }
  
+
+  .noticiaCards,
+  .problema,
+  .conceito,
+  .tipos,
+  .automacao,
+  .casos,
+  .dimtech-ajuda{
+   margin: 10px 16px;
+  }
 
 }
 
