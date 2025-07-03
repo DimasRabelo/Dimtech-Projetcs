@@ -166,10 +166,11 @@ header div h1 {
 }
 
 .contSobre h2 {
-  color: #ffffff;
+  color: #041e47;
   text-transform: uppercase;
   font-size: 1.8em;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 .contSobre h3{
   color:#041e47;
@@ -419,10 +420,11 @@ main {
 }
 
 .textService {
-  color: #ffffff;
+  color: #041e47;
   font-size: 1.8em;
   text-align: center;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 /* Página Artigos */
@@ -694,11 +696,15 @@ pre {
 
 /* Página Formatacao */ /* Página Troca SSD */ /* Página Backup */
 
+
+
+
 .servicos {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #ccc;
+  
 }
 
 .servicosimg {

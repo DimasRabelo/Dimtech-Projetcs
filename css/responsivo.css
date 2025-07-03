@@ -12,7 +12,9 @@
     align-items: center;
     padding: 20px;
   }
-
+figure.servicosimg figcaption {
+    display: none;
+  }
   .fade img {
     height: 215px;
   }

@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Serviço de formatação completa de computadores com backup, instalação de drivers e limpeza."
+      content="Serviço de formatação completa de computadores com backup, instalação de drivers e limpeza para garantir desempenho e segurança."
     />
-    <title>Formatação de Computadores - Página Inicial</title>
+    <title>Formatação de Computadores | Backup, Drivers e Otimização</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,8 +16,6 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
     />
-
-   
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/reset.css" />
@@ -33,18 +31,20 @@
   </head>
 
   <body>
-    <header id="menu"></header>
+    <header id="menu" aria-label="Menu de navegação">
+      <!-- menu carregado dinamicamente via JavaScript -->
+    </header>
 
-    <main class="site">
+    <main class="site" role="main">
       <section class="servicos wow animate__animated animate__fadeInUp">
         <div class="servicostexto formate">
           <h1>Formatação de Computadores</h1>
           <p>
             Restaure a velocidade e a eficiência do seu PC com uma formatação
-            completa e segura.
+            completa e segura, feita por profissionais.
           </p>
 
-          <h2>O que está incluso:</h2>
+          <h2>O que está incluso</h2>
           <ul>
             <li>Backup dos arquivos antes da formatação (se solicitado)</li>
             <li>Limpeza completa do sistema</li>
@@ -53,23 +53,45 @@
             <li>Configuração básica pronta para uso</li>
           </ul>
 
-          <h2>Vantagens:</h2>
+          <h2>Vantagens</h2>
           <p>
-            Elimine vírus, arquivos inúteis e erros do sistema. Garanta um
+            Elimine vírus, arquivos inúteis e erros do sistema, garantindo um
             desempenho mais rápido e estável, como se fosse novo.
           </p>
+
+<div class="acoes-servico">
+  <a href="contato.html" class="btn-cta">Solicitar Orçamento</a>
+  <p>
+    Ou, se preferir,
+    <a
+      href="https://api.whatsapp.com/send?phone=5511920147807&text=Olá! Gostaria de saber mais sobre nossos Serviços."
+      target="_blank"
+      rel="noopener"
+    >
+      <i class="fab fa-whatsapp"></i> Falar pelo WhatsApp
+    </a>
+  </p>
+</div>
+
+
         </div>
 
-        <div class="servicosimg">
+        
+
+        <figure class="servicosimg">
           <img
             src="img/formatacao.png"
-            alt="Ilustração de computador sendo formatado"
+            alt="Ilustração de um técnico formatando um computador com backup"
           />
-        </div>
+          <figcaption>Formatação completa e segura do seu computador</figcaption>
+        </figure>
       </section>
     </main>
+    
 
-    <footer id="rodape"></footer>
+    <footer id="rodape" aria-label="Rodapé do site">
+      <!-- rodapé carregado dinamicamente via JavaScript -->
+    </footer>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
@@ -77,10 +99,11 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       crossorigin="anonymous"
     ></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/lity.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/animacoes.js"></script>
+    <script defer src="js/slick.min.js"></script>
+    <script defer src="js/lity.min.js"></script>
+    <script defer src="js/wow.min.js"></script>
+    <script defer src="js/animacoes.js"></script>
+
     
   </body>
 </html>
