@@ -2,10 +2,33 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <meta
       name="description"
       content="Tutorial passo a passo de como criar um backup no Windows 10 utilizando as opções de Configurações e Histórico de Arquivos."
+    />
+    <meta
+      name="keywords"
+      content="backup, Windows 10, salvar arquivos, histórico de arquivos, tutorial backup Windows"
+    />
+    <meta
+      property="og:title"
+      content="Como Criar Backup no Windows 10"
+    />
+    <meta
+      property="og:description"
+      content="Tutorial passo a passo para criar backup no Windows 10 de forma simples e segura."
+    />
+    <meta
+      property="og:type"
+      content="article"
+    />
+    <meta
+      property="og:image"
+      content="img/backup-logo.png"
     />
     <title>Como Criar Backup no Windows 10</title>
     <link
@@ -22,53 +45,99 @@
     />
     <link rel="stylesheet" href="css/estilo.css" />
     <link rel="stylesheet" href="css/responsivo.css" />
+    <link rel="icon" href="img/favicon.ico" />
   </head>
 
   <body>
-    <div id="menu"></div>
+    <div id="menu" role="navigation"></div>
 
     <header class="cabecalho">
-      <img src="img/backup-logo.png" alt="Logo Backup" class="logo animate__animated animate__bounce" />
+      <img
+        src="img/backup-logo.png"
+        alt="Logo Backup DimTech"
+        class="logo animate__animated animate__bounce"
+      />
       <h1 class="tituloVent">Como Criar Backup no Windows 10</h1>
     </header>
 
+    <nav class="indice">
+      <ul>
+        <li><a href="#passo1">Passo 1: Configurações</a></li>
+        <li><a href="#passo2">Passo 2: Atualização e Segurança</a></li>
+        <li><a href="#passo3">Passo 3: Escolha do Local</a></li>
+        <li><a href="#passo4">Passo 4: Opções Avançadas</a></li>
+        <li><a href="#passo5">Passo 5: Restaurar Arquivos</a></li>
+      </ul>
+    </nav>
+
     <section class="banner">
-      <img src="img/Banner/windows-backup1.png" alt="Banner 1" />
-      <img src="img/Banner/windows-backup2.png" alt="Banner 2" />
-      <img src="img/Banner/windows-backup3.png" alt="Banner 3" />
-      <img src="img/Banner/windows-backup4.png" alt="Banner 4" />
-      <img src="img/Banner/windows-backup5.png" alt="Banner 4" />
-      <img src="img/Banner/windows-backup6.png" alt="Banner 4" />
-      
+      <img
+        src="img/Banner/windows-backup1.png"
+        alt="Configuração do backup no Windows 10 - etapa 1"
+        loading="lazy"
+      />
+      <img
+        src="img/Banner/windows-backup2.png"
+        alt="Configuração do backup no Windows 10 - etapa 2"
+        loading="lazy"
+      />
+      <img
+        src="img/Banner/windows-backup3.png"
+        alt="Configuração do backup no Windows 10 - etapa 3"
+        loading="lazy"
+      />
+      <img
+        src="img/Banner/windows-backup4.png"
+        alt="Configuração do backup no Windows 10 - etapa 4"
+        loading="lazy"
+      />
+      <img
+        src="img/Banner/windows-backup5.png"
+        alt="Configuração do backup no Windows 10 - etapa 5"
+        loading="lazy"
+      />
+      <img
+        src="img/Banner/windows-backup6.png"
+        alt="Configuração do backup no Windows 10 - etapa 6"
+        loading="lazy"
+      />
     </section>
 
-    <div class="container">
+    <main class="container">
       <h2 class="tituloVent">Por que fazer backup no Windows 10?</h2>
       <p>
-        Fazer backup de seus arquivos e configurações ajuda a proteger seus dados contra falhas de hardware, ataques de vírus ou exclusões acidentais. O Windows 10 oferece a função de Histórico de Arquivos para criar cópias de segurança de forma prática.
+        Fazer backup de seus arquivos e configurações ajuda a proteger seus
+        dados contra falhas de hardware, ataques de vírus ou exclusões
+        acidentais. O Windows 10 oferece a função de Histórico de Arquivos
+        para criar cópias de segurança de forma prática.
       </p>
 
-      <h2>Passo 1: Acesse as Configurações</h2>
+      <h2 id="passo1">Passo 1: Acesse as Configurações</h2>
       <p>
-        Clique no menu <strong>Iniciar</strong> e selecione <strong>Configurações</strong> (ícone de engrenagem).
+        Clique no menu <strong>Iniciar</strong> e selecione
+        <strong>Configurações</strong> (ícone de engrenagem).
       </p>
 
-      <h2>Passo 2: Vá para Atualização e Segurança</h2>
+      <h2 id="passo2">Passo 2: Vá para Atualização e Segurança</h2>
       <p>
-        Dentro do menu Configurações, clique em <strong>Atualização e Segurança</strong>, e em seguida selecione <strong>Backup</strong> no menu lateral.
+        Dentro do menu Configurações, clique em
+        <strong>Atualização e Segurança</strong> e depois selecione
+        <strong>Backup</strong> no menu lateral.
       </p>
 
-      <h2>Passo 3: Configurar backup</h2>
+      <h2 id="passo3">Passo 3: Configurar backup</h2>
       <p>
-        Clique em <strong>Adicionar uma unidade</strong> para escolher um disco externo ou uma unidade de rede onde os arquivos de backup serão salvos.
-      </p>
-      <p>
-        Depois de escolher a unidade, ative o recurso <strong>Fazer backup automático dos meus arquivos</strong>.
+        Clique em <strong>Adicionar uma unidade</strong> para escolher um disco
+        externo ou unidade de rede onde os arquivos de backup serão salvos.
+        Depois de escolher a unidade, ative o recurso
+        <strong>Fazer backup automático dos meus arquivos</strong>.
       </p>
 
-      <h2>Passo 4: Configurar opções avançadas</h2>
+      <h2 id="passo4">Passo 4: Configurar opções avançadas</h2>
       <p>
-        Clique em <strong>Mais opções</strong> para personalizar quais pastas deseja incluir no backup, a frequência e o tempo de retenção dos backups.
+        Clique em <strong>Mais opções</strong> para personalizar quais pastas
+        deseja incluir no backup, a frequência e o tempo de retenção dos
+        backups.
       </p>
       <ul>
         <li>Você pode adicionar ou remover pastas do backup.</li>
@@ -76,25 +145,36 @@
         <li>Defina por quanto tempo os backups antigos devem ser mantidos.</li>
       </ul>
 
-      <h2>Passo 5: Restaurar arquivos quando precisar</h2>
+      <h2 id="passo5">Passo 5: Restaurar arquivos quando precisar</h2>
       <p>
-        Caso algum arquivo seja perdido ou corrompido, volte a esta tela e clique em <strong>Restaurar arquivos de um backup atual</strong>. Você poderá navegar pelas versões anteriores e restaurar os arquivos desejados.
+        Caso algum arquivo seja perdido ou corrompido, volte a esta tela e
+        clique em <strong>Restaurar arquivos de um backup atual</strong>. Você
+        poderá navegar pelas versões anteriores e restaurar os arquivos
+        desejados.
       </p>
 
       <h2>Dicas Extras</h2>
       <ul>
-        <li>Recomenda-se usar um HD externo dedicado ao backup.</li>
-        <li>Mantenha o HD de backup desconectado quando não estiver em uso para evitar vírus.</li>
-        <li>Combine o backup local com serviços de nuvem para maior segurança.</li>
+        <li>Use um HD externo dedicado ao backup.</li>
+        <li>
+          Mantenha o HD de backup desconectado quando não estiver em uso para
+          evitar vírus.
+        </li>
+        <li>
+          Combine o backup local com serviços de nuvem para maior segurança.
+        </li>
       </ul>
-    </div>
+    </main>
 
-    <div id="rodape"></div>
+    <div id="rodape" role="contentinfo"></div>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/lity.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/animacoes.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      defer
+    ></script>
+    <script src="js/slick.min.js" defer></script>
+    <script src="js/lity.min.js" defer></script>
+    <script src="js/wow.min.js" defer></script>
+    <script src="js/animacoes.js" defer></script>
   </body>
 </html>

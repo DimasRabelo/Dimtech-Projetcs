@@ -60,5 +60,19 @@ document.querySelectorAll('.botao').forEach(function(botao) {
   });
 
  
+emailjs.init({
+    publicKey: "h4Do4BoEXXEYG9JPh"
+  });
 
+  document.getElementById("form-contato").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm("service_cq95kzf", "template_pxjslst", this)
+      .then(function() {
+        alert("Mensagem enviada com sucesso!");
+        document.getElementById("form-contato").reset();  // limpa os campos
+      }, function(error) {
+        alert("Erro ao enviar: " + JSON.stringify(error));
+      });
+  });
 

@@ -29,34 +29,28 @@
     <h2 class="textService">CONTATO</h2>
     
    <div class="contato-container site">
-  <form id="form-contato"  class="form-contato" action="#" method="post">
-    <h2>Fale com a DimTech</h2>
+  <form id="form-contato" class="form-contato" action="#" method="post">
+  <h2>Fale com a DimTech</h2>
 
-    <label for="nome">Seu Nome:</label>
-    <input type="text" name="name" required>
+  <label for="nome">Seu Nome:</label>
+  <input type="text" id="nome" name="name" placeholder="Digite seu nome completo" required />
 
-    <label for="assunto">Assunto:</label>
-    <input type="text" name="title" required>
+  <label for="assunto">Assunto:</label>
+  <input type="text" id="assunto" name="title" placeholder="Digite o assunto" required />
 
+  <label for="email">Seu e-mail:</label>
+  <input type="email" id="email" name="email" placeholder="exemplo@dominio.com" required />
 
-    <label for="email">Seu e-mail:</label>
-   <input type="email" name="email" required>
+  <label for="mensagem">Sua mensagem:</label>
+  <textarea id="mensagem" name="message" placeholder="Escreva sua mensagem aqui" required></textarea>
 
-    <label for="mensagem">Sua mensagem:</label>
-   <textarea name="message" required></textarea>
-
-    <button type="submit">Enviar</button>
-  </form>
+  <button type="submit" aria-label="Enviar mensagem para DimTech">Enviar</button>
+</form>
 
   <div class="imagem-contato">
     <img src="img/foto-contato.png" alt="Imagem de contato" class="img-contato" />
   </div>
 </div>
-
-    
-
-
-
 
     <div id="rodape"></div>
 
@@ -69,33 +63,9 @@
     <script src="js/slick.min.js"></script>
     <script src="js/lity.min.js"></script>
     <script src="js/wow.min.js"></script>
-    <script src="js/animacoes.js"></script>
-  
+    <script src="js/animacoes.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-<script>
-  emailjs.init({
-    publicKey: "h4Do4BoEXXEYG9JPh"
-  });
-
-  document.getElementById("form-contato").addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    emailjs.sendForm("service_cq95kzf", "template_pxjslst", this)
-      .then(function() {
-        alert("Mensagem enviada com sucesso!");
-        document.getElementById("form-contato").reset();  // limpa os campos
-      }, function(error) {
-        alert("Erro ao enviar: " + JSON.stringify(error));
-      });
-  });
-</script>
-  
   </body>
-
- 
-
-
-
  
 </html>

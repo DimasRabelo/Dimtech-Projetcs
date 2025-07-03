@@ -598,7 +598,7 @@ main {
 
 .container {
   max-width: 900px;
-  margin: 50px auto;
+  margin: 4px auto;
   padding: 30px;
   background-color: #ffffff;
   border-radius: 12px;
@@ -660,6 +660,31 @@ pre {
   margin-bottom: 30px;
   font-size: 1em;
 }
+
+.indice {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.indice ul {
+  list-style: none;
+  padding: 0;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.indice ul li a {
+  text-decoration: none;
+  color: #1d9bc1;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.indice ul li a:hover {
+  color: #0c5572;
+}
+
 /* Fim do Ventoy tutorial */
 
 /* Página Formatacao */ /* Página Troca SSD */ /* Página Backup */

@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Como Usar o Ventoy: Crie um Pendrive Multi-ISO Passo a Passo</title>
     <meta
       name="description"
-      content="Tutorial passo a passo de como usar o Ventoy para executar ISOs diretamente de um pendrive."
+      content="Aprenda como criar um pendrive bootável com múltiplas ISOs usando o Ventoy. Tutorial simples e completo para Windows e Linux."
     />
-    <title>Como Executar ISOs com Ventoy</title>
+
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
@@ -15,104 +17,106 @@
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/slick-theme.css" />
     <link rel="stylesheet" href="css/reset.css" />
-
     <link rel="stylesheet" href="css/lity.css" />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-
     <link rel="stylesheet" href="css/estilo.css" />
     <link rel="stylesheet" href="css/responsivo.css" />
   </head>
-  
-
-
 
   <body>
+    <div id="menu"></div>
 
-     <div id="menu"></div>
+    <main>
+      <header class="cabecalho">
+        <img
+          src="img/ventoy-logo.png"
+          alt="Logo do Ventoy"
+          class="logo animate__animated animate__bounce"
+        />
+        <h1 class="tituloVent">Como Usar o Ventoy para Executar ISOs</h1>
+      </header>
 
-    <header class="cabecalho">
-      <img src="img/ventoy-logo.png" alt="Logo" class="logo animate__animated animate__bounce" />
-      <h1 class="tituloVent">Como Executar ISOs com o Ventoy</h1>
-    </header>
+      <section class="banner">
+        <img src="img/Banner/banner1.png" alt="Etapa inicial do tutorial do Ventoy" />
+        <img src="img/Banner/banner2.png" alt="Configuração do Ventoy no pendrive" />
+        <img src="img/Banner/banner3.png" alt="Tela de escolha de ISOs no Ventoy" />
+        <img src="img/Banner/banner4.png" alt="Passo de instalação do Ventoy" />
+        <img src="img/Banner/banner5.png" alt="Configuração avançada do Ventoy" />
+        <img src="img/Banner/banner6.png" alt="Exemplo de múltiplos ISOs no Ventoy" />
+        <img src="img/Banner/banner7.png" alt="Demonstração do boot com Ventoy" />
+        <img src="img/Banner/banner8.png" alt="Atualização do Ventoy no pendrive" />
+        <img src="img/Banner/banner9.png" alt="Tela do Ventoy em execução" />
+        <img src="img/Banner/banner10.png" alt="Instalação concluída no Ventoy" />
+        <img src="img/Banner/banner11.png" alt="Lista de ISOs carregada no Ventoy" />
+        <img src="img/Banner/banner12.png" alt="Configuração final do pendrive Ventoy" />
+        <img src="img/Banner/banner13.png" alt="Exemplo de uso do Ventoy" />
+      </section>
 
-    <section class="banner">
-      <img src="img/Banner/banner1.png" alt="Banner Tutorial-1" />
-      <img src="img/Banner/banner2.png" alt="Banner Tutorial-2" />
-      <img src="img/Banner/banner3.png" alt="Banner Tutorial-3" />
-      <img src="img/Banner/banner4.png" alt="Banner Tutorial-4" />
-      <img src="img/Banner/banner5.png" alt="Banner Tutorial-5" />
-      <img src="img/Banner/banner6.png" alt="Banner Tutorial-6" />
-      <img src="img/Banner/banner7.png" alt="Banner Tutorial-7" />
-      <img src="img/Banner/banner8.png" alt="Banner Tutorial-8" />
-      <img src="img/Banner/banner9.png" alt="Banner Tutorial-9" />
-      <img src="img/Banner/banner10.png" alt="Banner Tutorial-10" />
-      <img src="img/Banner/banner11.png" alt="Banner Tutorial-11" />
-      <img src="img/Banner/banner12.png" alt="Banner Tutorial-12" />
-      <img src="img/Banner/banner13.png" alt="Banner Tutorial-13" />
-    </section>
+      <div class="container">
+        <h2>O que é o Ventoy?</h2>
+        <p>
+          O Ventoy é uma ferramenta gratuita que permite criar um pendrive
+          bootável onde você simplesmente copia arquivos ISO. Nada de extrair ou
+          criar imagem — é só copiar e usar.
+        </p>
 
-    <div class="container">
-      <h2 class="tituloVent">O que é o Ventoy?</h2>
-      <p>
-        Ventoy é uma ferramenta gratuita que permite criar um pendrive bootável
-        onde você simplesmente copia arquivos ISO. Nada de extrair ou criar
-        imagem — é só copiar e usar.
-      </p>
+        <h2>Passo 1: Baixe o Ventoy</h2>
+        <p>
+          Acesse o site oficial do Ventoy em
+          <a
+            href="https://www.ventoy.net"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ventoy.net
+          </a>
+          e baixe a versão mais recente. Depois, navegue até a página de
+          download.
+        </p>
 
-      <h2>Passo 1: Baixe o Ventoy</h2>
-      <p>
-        Acesse o site oficial:
-        <a href="https://www.ventoy.net" target="_blank"
-          >https://www.ventoy.net</a
-        >
-        e baixe a versão mais recente.
-      </p>
-      <p>Navegue Ate a página Download</p>
-      <h2>Passo 2: Instale no pendrive</h2>
-      <ol>
-        <li>Extraia o arquivo ZIP do Ventoy.</li>
-        <li>
-          Execute o programa <strong>Ventoy2Disk.exe</strong> (no Windows).
-        </li>
-        <li>Escolha o seu pendrive e clique em <strong>Install</strong>.</li>
-      </ol>
+        <h2>Passo 2: Instale no pendrive</h2>
+        <ol>
+          <li>Extraia o arquivo ZIP do Ventoy.</li>
+          <li>
+            Execute o programa <strong>Ventoy2Disk.exe</strong> (no Windows).
+          </li>
+          <li>Escolha o seu pendrive e clique em <strong>Install</strong>.</li>
+        </ol>
 
-      <h2>Passo 3: Adicione arquivos ISO</h2>
-      <p>
-        Com o pendrive pronto, basta copiar os arquivos .iso para a raiz do
-        pendrive. Exemplo:
-      </p>
-      <pre>
+        <h2>Passo 3: Adicione arquivos ISO</h2>
+        <p>
+          Com o pendrive pronto, basta copiar os arquivos .iso para a raiz do
+          pendrive. Exemplo:
+        </p>
+        <pre>
 Ventoy (Pendrive)
 ├── AcronisTrueImage2021.iso
 ├── linuxmint-21.2-cinnamon-64bit.iso
 ├── Windows.iso
-    </pre
-      >
+        </pre>
 
-      <h2>Passo 4: Dê boot pelo pendrive</h2>
-      <p>
-        Reinicie seu computador, entre na BIOS/UEFI e escolha iniciar pelo
-        pendrive. O Ventoy mostrará uma lista das ISOs disponíveis para você
-        selecionar.
-      </p>
+        <h2>Passo 4: Dê boot pelo pendrive</h2>
+        <p>
+          Reinicie seu computador, entre na BIOS/UEFI e escolha iniciar pelo
+          pendrive. O Ventoy mostrará uma lista das ISOs disponíveis para você
+          selecionar.
+        </p>
 
-      <h2>Dicas Extras</h2>
-      <ul>
-        <li>Você pode atualizar o Ventoy no pendrive sem perder as ISOs.</li>
-        <li>
-          Funciona com sistemas Linux, Windows, ferramentas de recuperação e
-          mais.
-        </li>
-      </ul>
-    </div>
+        <h2>Dicas Extras</h2>
+        <ul>
+          <li>Você pode atualizar o Ventoy no pendrive sem perder as ISOs.</li>
+          <li>
+            Funciona com sistemas Linux, Windows, ferramentas de recuperação e
+            muito mais.
+          </li>
+        </ul>
+      </div>
+    </main>
 
     <div id="rodape"></div>
-
 
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="js/slick.min.js"></script>
@@ -120,9 +124,8 @@ Ventoy (Pendrive)
     <script src="js/wow.min.js"></script>
     <script src="js/animacoes.js"></script>
   </body>
-
-
-
- 
-
 </html>
+<!--
+  This HTML document provides a complete guide on how to use Ventoy, a tool for creating bootable USB drives with multiple ISO files.
+  It includes sections on downloading, installing, adding ISO files, and booting from the USB drive.
+  The document is structured with headings, paragraphs, and lists for clarity.
