@@ -62,19 +62,4 @@ document.querySelectorAll('.botao').forEach(function(botao) {
  
 
 
-  // Inicializando o EmailJS com a chave pública
-  emailjs.init("mD5gPYmjep3kYlZ4a");
-
-  document.getElementById("form-contato").addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    // Enviando o formulário para o template do EmailJS
-    emailjs.sendForm("service_cq95kzf", "template_0wluhzp", this)
-      .then(function() {
-        alert("Mensagem enviada com sucesso!");
-        document.getElementById("form-contato").reset();  // Limpa os campos do formulário
-      }, function(error) {
-        alert("Erro ao enviar: " + JSON.stringify(error));
-      });
-  });
-
+  
