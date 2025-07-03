@@ -29,22 +29,24 @@
     <h2 class="textService">CONTATO</h2>
     
    <div class="contato-container site">
-  <form id="form-contato">
-  <label>Nome:</label>
-  <input type="text" name="name" required>
+  <form id="form-contato"  class="form-contato" action="#" method="post">
+    <h2>Fale com a DimTech</h2>
 
-  <label>Assunto:</label>
-  <input type="text" name="title" required>
+    <label for="nome">Seu Nome:</label>
+    <input type="text" name="name" required>
 
-  <label>Email:</label>
-  <input type="email" name="email" required>
+    <label for="assunto">Assunto:</label>
+    <input type="text" name="title" required>
 
-  <label>Mensagem:</label>
-  <textarea name="message" required></textarea>
 
-  <button type="submit">Enviar</button>
-</form>
+    <label for="email">Seu e-mail:</label>
+   <input type="email" name="email" required>
 
+    <label for="mensagem">Sua mensagem:</label>
+   <textarea name="message" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
 
   <div class="imagem-contato">
     <img src="img/foto-contato.png" alt="Imagem de contato" class="img-contato" />
@@ -69,11 +71,7 @@
     <script src="js/wow.min.js"></script>
     <script src="js/animacoes.js"></script>
   
-  
-  
-  
-<!-- Importa a biblioteca EmailJS versão 4 -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <script>
   emailjs.init({
@@ -92,7 +90,12 @@
       });
   });
 </script>
-
+  
   </body>
 
+ 
+
+
+
+ 
 </html>
