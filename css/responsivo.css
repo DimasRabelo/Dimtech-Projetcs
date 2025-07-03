@@ -110,6 +110,10 @@ figure.servicosimg figcaption {
 
     margin: -90px 0px 90px 5px;
   }
+
+  .subMenu {
+    display: none; /* Esconde o submenu no mobile */
+  }
 }
 
 @media (max-width: 600px) {
@@ -132,6 +136,10 @@ figure.servicosimg figcaption {
     flex-direction: column; /* empilha os itens do menu se quiser em coluna */
     align-items: center;
     gap: 10px; /* espaço entre os itens */
+  }
+
+  .subMenu {
+    display: none; /* Esconde o submenu no mobile */
   }
 
   .slick-prev,
@@ -217,6 +225,10 @@ figure.servicosimg figcaption {
 @media (max-width: 1000px) {
   .slick-dots {
     display: none !important;
+  }
+
+  .subMenu {
+    display: none; /* Esconde o submenu no mobile */
   }
 
   .topoRedeSocial{
