@@ -63,7 +63,7 @@ document.querySelectorAll('.botao').forEach(function(botao) {
 
 
   // Inicializando o EmailJS com a chave pública
-  emailjs.init("wb6QHhbxNjCWGJ6VB");
+  emailjs.init("mD5gPYmjep3kYlZ4a");
 
   document.getElementById("form-contato").addEventListener("submit", function(event) {
     event.preventDefault();
