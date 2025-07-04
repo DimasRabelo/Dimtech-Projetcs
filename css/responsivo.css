@@ -12,9 +12,7 @@
     align-items: center;
     padding: 20px;
   }
-figure.servicosimg figcaption {
-    display: none;
-  }
+
   .fade img {
     height: 215px;
   }
@@ -111,9 +109,7 @@ figure.servicosimg figcaption {
     margin: -90px 0px 90px 5px;
   }
 
-  .subMenu {
-    display: none; /* Esconde o submenu no mobile */
-  }
+ 
 }
 
 @media (max-width: 600px) {
@@ -138,10 +134,7 @@ figure.servicosimg figcaption {
     gap: 10px; /* espaço entre os itens */
   }
 
-  .subMenu {
-    display: none; /* Esconde o submenu no mobile */
-  }
-
+ 
   .slick-prev,
   .slick-next {
     display: none !important;
@@ -227,9 +220,7 @@ figure.servicosimg figcaption {
     display: none !important;
   }
 
-  .subMenu {
-    display: none; /* Esconde o submenu no mobile */
-  }
+ 
 
   .topoRedeSocial{
     padding: 0px 15px;
