@@ -75,15 +75,15 @@
 
     // Enviando o formulário para o template do EmailJS
     emailjs.sendForm("service_cq95kzf", "template_0wluhzp", this)
-      .then(function() {template_0wluhzp
-        alert("Mensagem enviada com sucesso!");
+      .then(function() {
+        alert("Mensagem enviada com sucesso!"); // Alerta de sucesso
         document.getElementById("form-contato").reset();  // Limpa os campos do formulário
       }, function(error) {
-        alert("Erro ao enviar: " + JSON.stringify(error));
+        alert("Erro ao enviar: " + JSON.stringify(error)); // Alerta de erro
       });
   });
+</script>
 
-  </script>
   </body>
  
 </html>
