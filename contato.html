@@ -29,7 +29,7 @@
     <h2 class="textService">CONTATO</h2>
     
    <div class="contato-container site">
-  <form id="form-contato" class="form-contato" action="https://formspree.io/f/xldnvzlv" method="post">
+  <form id="form-contato" class="form-contato" action="#" method="post">
   <h2>Fale com a DimTech</h2>
 
   <label for="nome">Seu Nome:</label>
@@ -66,7 +66,24 @@
     <script src="js/animacoes.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
+<script>
+// Inicializando o EmailJS com a chave pública
+  emailjs.init("SfAYj6Pk5-B1KAS1e");
 
+  document.getElementById("form-contato").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    // Enviando o formulário para o template do EmailJS
+    emailjs.sendForm("service_cq95kzf", "template_0wluhzp", this)
+      .then(function() {template_0wluhzp
+        alert("Mensagem enviada com sucesso!");
+        document.getElementById("form-contato").reset();  // Limpa os campos do formulário
+      }, function(error) {
+        alert("Erro ao enviar: " + JSON.stringify(error));
+      });
+  });
+
+  </script>
   </body>
  
 </html>
