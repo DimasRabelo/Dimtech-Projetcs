@@ -40,7 +40,13 @@
     margin-left: -48px;
   }
 
+ .menu .subMenu ul {
+    display: none; /* Esconde o submenu */
+  }
 
+  .menu .subMenu > a {
+    display: block; /* Garante que o link "Serviços" fique visível */
+  }
 
   .problema{
   margin: 4px 10px;
@@ -227,7 +233,13 @@
   .slick-dots {
     display: none !important;
   }
+ .menu .subMenu ul {
+    display: none; /* Esconde o submenu */
+  }
 
+  .menu .subMenu > a {
+    display: block; /* Garante que o link "Serviços" fique visível */
+  }
  
 
   .topoRedeSocial{
