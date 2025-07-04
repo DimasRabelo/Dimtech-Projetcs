@@ -157,6 +157,14 @@
     background-color: #1b4350;
   }
 
+  .menu .subMenu ul {
+    display: none; /* Esconde o submenu */
+  }
+
+  .menu .subMenu > a {
+    display: block; /* Garante que o link "Serviços" fique visível */
+  }
+
 
 
   
