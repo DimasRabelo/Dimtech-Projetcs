@@ -381,8 +381,17 @@
     margin: 4px 9px;
     
   }
-
 }
+
+  @media (max-width: 1200px){
+    .menu ul {
+      padding: 20px;
+    }
+
+    
+  }
+
+
 
 
 
