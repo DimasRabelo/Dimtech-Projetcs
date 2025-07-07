@@ -1,9 +1,9 @@
+
 /*
     ##########################
-    ### Smartphones: 0 até 600
+    ### Smartphones: 0 até 400
     ##########################
 */
-
 @media (max-width: 400px) {
   .conteudo {
     display: flex;
@@ -121,6 +121,13 @@
 }
  
 }
+
+
+/*
+    ##########################
+    ### Smartphones: 0 até 600
+    ##########################
+*/
 
 @media (max-width: 600px) {
   
