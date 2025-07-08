@@ -57,35 +57,40 @@
 
     <div id="rodape"></div>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/lity.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/animacoes.js"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4383742708342701"
-     crossorigin="anonymous"></script>
+      <!-- Área para carregar o aviso de cookies -->
+<div id="aviso-cookies"></div>
 
+<!-- Scripts JS (ao final do body para melhor performance) -->
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/lity.min.js"></script>
+<script src="js/wow.min.js"></script>
+
+<!-- Script principal: animacoes.js (sem defer para garantir execução após jQuery) -->
+<script src="js/animacoes.js"></script>
+
+<!-- Inicialização do EmailJS e submissão do formulário -->
 <script>
-// Inicializando o EmailJS com a chave pública
-  emailjs.init("SfAYj6Pk5-B1KAS1e");
+  $(document).ready(function () {
+    // Carrega aviso de cookies (pode mover para animacoes.js, se preferir)
+    $('#aviso-cookies').load('cookies.html');
 
-  document.getElementById("form-contato").addEventListener("submit", function(event) {
-    event.preventDefault();
+    // Inicializa EmailJS
+    emailjs.init("SfAYj6Pk5-B1KAS1e");
 
-    // Enviando o formulário para o template do EmailJS
-    emailjs.sendForm("service_cq95kzf", "template_0wluhzp", this)
-      .then(function() {
-        alert("Mensagem enviada com sucesso!"); // Alerta de sucesso
-        document.getElementById("form-contato").reset();  // Limpa os campos do formulário
-      }, function(error) {
-        alert("Erro ao enviar: " + JSON.stringify(error)); // Alerta de erro
-      });
+    // Envio do formulário
+    document.getElementById("form-contato").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      emailjs.sendForm("service_cq95kzf", "template_0wluhzp", this)
+        .then(function () {
+          alert("Mensagem enviada com sucesso!");
+          document.getElementById("form-contato").reset();
+        }, function (error) {
+          alert("Erro ao enviar: " + JSON.stringify(error));
+        });
+    });
   });
 </script>
 

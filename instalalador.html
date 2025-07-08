@@ -101,17 +101,23 @@
       <!-- rodapé carregado via JavaScript -->
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.7.1.js" defer></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      crossorigin="anonymous"
-      defer
-    ></script>
-    <script src="js/slick.min.js" defer></script>
-    <script src="js/lity.min.js" defer></script>
-    <script src="js/wow.min.js" defer></script>
-    <script src="js/animacoes.js" defer></script>
+    <!-- Área para carregar o aviso de cookies -->
+<div id="aviso-cookies"></div>
+
+<!-- Scripts JS -->
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/lity.min.js"></script>
+<script src="js/wow.min.js"></script>
+
+<!-- Carrega o aviso de cookies -->
+<script>
+  $('#aviso-cookies').load('cookies.html');
+</script>
+
+<!-- Seu script com a lógica do cookie e outras animações -->
+<script src="js/animacoes.js" defer></script>
+
    
   </body>
 </html>
