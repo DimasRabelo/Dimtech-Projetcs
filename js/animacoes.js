@@ -53,16 +53,18 @@ $(document).ready(function () {
     });
 
   /* Aviso de Cookies */
-  $('#aviso-cookies').load('cookies.html', function () {
-    const banner = document.getElementById('cookie-banner');
-    const aceitar = document.getElementById('aceitar-cookies');
+  if (!localStorage.getItem('cookieConsent')) {
+    $('#aviso-cookies').load('cookies.html', function () {
+      const banner = document.getElementById('cookie-banner');
+      const aceitar = document.getElementById('aceitar-cookies');
 
-    if (banner && aceitar && !localStorage.getItem('cookieConsent')) {
-      banner.style.display = 'block';
-      aceitar.addEventListener('click', function () {
-        localStorage.setItem('cookieConsent', 'true');
-        banner.style.display = 'none';
-      });
-    }
-  });
+      if (banner && aceitar) {
+        banner.style.display = 'block';
+        aceitar.addEventListener('click', function () {
+          localStorage.setItem('cookieConsent', 'true');
+          banner.style.display = 'none';
+        });
+      }
+    });
+  }
 });
