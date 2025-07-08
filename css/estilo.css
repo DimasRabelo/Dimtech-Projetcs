@@ -251,6 +251,16 @@ footer {
   margin: 50px;
 }
 
+.rodape-link{
+  color:#6ba80a !important;
+}
+
+.politica {
+  color: #6ba80a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 /* Fim do Rodapé */
 
 /* Banner da página inicial */
@@ -919,10 +929,4 @@ article p {
 
 .dimtech-ajuda ul {
   margin-left: 20px;
-  margin-top: 10px;
-}
-
-.dimtech-ajuda ul li {
-  margin-bottom: 8px;
-  list-style-type: disc;
-}
+  margin-top: 10
