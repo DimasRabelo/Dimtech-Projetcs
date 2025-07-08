@@ -255,10 +255,15 @@ footer {
   color:#6ba80a !important;
 }
 
-.politica {
-  color: #6ba80a;
+.politica h1, h2{
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
+  text-align: center;
+}
+.politica p {
+  color:#1d9bc1;
+   text-align: center;
 }
 
 /* Fim do Rodapé */
@@ -929,4 +934,5 @@ article p {
 
 .dimtech-ajuda ul {
   margin-left: 20px;
-  margin-top: 10
+  margin-top: 10;
+}
