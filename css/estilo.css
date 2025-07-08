@@ -266,6 +266,44 @@ footer {
    text-align: center;
 }
 
+/* Aviso de cookies */
+
+#cookie-banner {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #041e47;
+  color: #6ba80a;
+  padding: 15px 10px;
+  text-align: center;
+  z-index: 9999;
+  font-size: 14px;
+}
+
+.cookie-container p {
+  margin: 0;
+  display: inline;
+}
+
+.cookie-container a {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+#aceitar-cookies {
+  background-color: #1d9bc1;
+  border: none;
+  color: #000;
+  padding: 8px 12px;
+  margin-left: 15px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+
+
+
 /* Fim do Rodapé */
 
 /* Banner da página inicial */

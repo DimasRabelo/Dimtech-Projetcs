@@ -1,65 +1,68 @@
-/* BANNER */
 $(document).ready(function () {
+  /* BANNER */
   $('.banner').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      dots: true,
-      arrows: true // Opcional, remove as setas para focar no autoplay
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    dots: true,
+    arrows: true
   });
-});
 
+  // ANIMAÇÃO DO MENU
+  $('.fade').slick({
+    dots: true,
+    autoplay: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'
+  });
 
-// ANIMAÇÃO DO MENU
+  /* WOW JS */
+  new WOW().init();
 
-$('.fade').slick({
-  dots: true,
-  autoplay: true,
-  infinite: true,
-  speed: 500,
-  fade: true,
-  cssEase: 'linear'
-});
-
-/* WOW JS */
-new WOW().init();
-
-document.querySelectorAll('.botao').forEach(function(botao) {
-    botao.addEventListener('click', function(event) {
-      event.preventDefault(); // Impede o redirecionamento imediato
-
+  // Botão com transição antes de mudar de página
+  document.querySelectorAll('.botao').forEach(function (botao) {
+    botao.addEventListener('click', function (event) {
+      event.preventDefault();
       const href = this.getAttribute('href');
       document.body.classList.add('fade-out');
-
-      setTimeout(function() {
+      setTimeout(function () {
         window.location.href = href;
-      }, 800); // tempo igual ao do transition
+      }, 800);
     });
   });
 
- /* Menu do site Topo 1 e Topo 2*/
-
-  
-   fetch("menu.html")
-  .then(res => res.text())
-  .then(data => {
-    const menu = document.getElementById("menu");
-    menu.innerHTML = data;
-    menu.style.display = "block"; // Só exibe quando estiver pronto
-  });
-
+  /* Menu do site */
+  fetch("menu.html")
+    .then(res => res.text())
+    .then(data => {
+      const menu = document.getElementById("menu");
+      menu.innerHTML = data;
+      menu.style.display = "block";
+    });
 
   /* Rodapé do site */
   fetch("rodape.html")
-  .then(res => res.text())
-  .then(data => {
-    const rodape = document.getElementById("rodape");
-    rodape.innerHTML = data;
-    rodape.style.display = "block"; // Só exibe quando estiver pronto
+    .then(res => res.text())
+    .then(data => {
+      const rodape = document.getElementById("rodape");
+      rodape.innerHTML = data;
+      rodape.style.display = "block";
+    });
+
+  /* Aviso de Cookies */
+  $('#aviso-cookies').load('cookies.html', function () {
+    const banner = document.getElementById('cookie-banner');
+    const aceitar = document.getElementById('aceitar-cookies');
+
+    if (banner && aceitar && !localStorage.getItem('cookieConsent')) {
+      banner.style.display = 'block';
+      aceitar.addEventListener('click', function () {
+        localStorage.setItem('cookieConsent', 'true');
+        banner.style.display = 'none';
+      });
+    }
   });
-
- 
-
-
-  
+});
