@@ -8,27 +8,21 @@
     <!-- Fontes e estilos externos -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/slick-theme.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/lity.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Lightbox2 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" />
+
     <link rel="stylesheet" href="css/estilo.css" />
     <link rel="stylesheet" href="css/responsivo.css" />
 
     <!-- Google Ads -->
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4383742708342701"
-      crossorigin="anonymous"
-    ></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4383742708342701" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -37,52 +31,59 @@
     <main>
       <!-- Sobre a DimTech -->
       <section class="contSobre wow animate__animated animate__fadeInUp">
-  <div class="site">
-    <h2>Sobre a DimTech</h2>
+        <div class="site">
+          <h2>Sobre a DimTech</h2>
 
-    <img
-      class="img-sobre"
-      src="img/sobre.png"
-      alt="Ilustração representando a inovação tecnológica da DimTech"
-    />
+          <a href="img/sobre.png" data-lightbox="sobre" data-title="Inovação tecnológica da DimTech">
+            <img
+              class="img-sobre"
+              src="img/sobre.png"
+              alt="Ilustração representando a inovação tecnológica da DimTech"
+            />
+          </a>
 
-    <div class="texto-sobre">
-      <h3>Quem somos</h3>
-      <p>
-        Fundada em junho de 2025, a DimTech nasceu com o propósito de tornar a
-        tecnologia mais simples, eficiente e acessível. Atuamos com excelência
-        em suporte técnico e no desenvolvimento de sistemas personalizados,
-        sempre com foco em soluções práticas, atendimento humano e resultados
-        reais. Conte com a gente para dar vida às suas ideias ou manter seu
-        computador sempre pronto. A formiguinha da DimTech está aqui para
-        ajudar! <span aria-label="formiguinha e notebook">🐜💻</span>
-        Fale conosco pelo WhatsApp: (11) 92014-7807
-      </p>
-    </div>
-  </div>
-</section>
-
+          <div class="texto-sobre">
+            <h3>Quem somos</h3>
+            <p>
+              Fundada em junho de 2025, a DimTech nasceu com o propósito de tornar a
+              tecnologia mais simples, eficiente e acessível. Atuamos com excelência
+              em suporte técnico e no desenvolvimento de sistemas personalizados,
+              sempre com foco em soluções práticas, atendimento humano e resultados
+              reais. Conte com a gente para dar vida às suas ideias ou manter seu
+              computador sempre pronto. A formiguinha da DimTech está aqui para
+              ajudar! <span aria-label="formiguinha e notebook">🐜💻</span>
+              Fale conosco pelo WhatsApp: (11) 92014-7807
+            </p>
+          </div>
+        </div>
+      </section>
 
       <!-- Missão, Visão e Valores lado a lado -->
       <section class="contSobre wow animate__animated animate__fadeInUp">
         <div class="site flex-imagens">
           <div class="bloco-img">
-            <img
-              src="img/visao.png"
-              alt="Imagem conceitual simbolizando a visão de futuro da DimTech"
-            />
+            <a href="img/visao.png" data-lightbox="valores" data-title="Visão de futuro da DimTech">
+              <img
+                src="img/visao.png"
+                alt="Imagem conceitual simbolizando a visão de futuro da DimTech"
+              />
+            </a>
           </div>
           <div class="bloco-img">
-            <img
-              src="img/missao.png"
-              alt="Ilustração que representa a missão de facilitar o acesso à tecnologia"
-            />
+            <a href="img/missao.png" data-lightbox="valores" data-title="Missão: facilitar o acesso à tecnologia">
+              <img
+                src="img/missao.png"
+                alt="Ilustração que representa a missão de facilitar o acesso à tecnologia"
+              />
+            </a>
           </div>
           <div class="bloco-img">
-            <img
-              src="img/valores.png"
-              alt="Imagem com ícones representando valores como ética, inovação e qualidade"
-            />
+            <a href="img/valores.png" data-lightbox="valores" data-title="Valores: ética, inovação e qualidade">
+              <img
+                src="img/valores.png"
+                alt="Imagem com ícones representando valores como ética, inovação e qualidade"
+              />
+            </a>
           </div>
         </div>
       </section>
@@ -96,6 +97,10 @@
     <script src="js/slick.min.js"></script>
     <script src="js/lity.min.js"></script>
     <script src="js/wow.min.js"></script>
+
+    <!-- Lightbox2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
     <script src="js/animacoes.js" defer></script>
   </body>
 </html>

@@ -20,6 +20,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+
+    <!-- Lightbox2 CDN CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
+    />
+
     <link rel="stylesheet" href="css/estilo.css" />
     <link rel="stylesheet" href="css/responsivo.css" />
 
@@ -51,33 +58,51 @@
         <section class="conteudo wow animate__animated animate__fadeInUp">
           <div class="card">
             <div class="imagemTexto">
-              <img
-                class="imagemC"
-                src="img/ventoy.png"
-                alt="Logo do Ventoy, software para criar pendrives bootáveis"
-              />
+              <a
+                href="img/ventoy.png"
+                data-lightbox="cards"
+                data-title="Ventoy: criar pendrives bootáveis"
+              >
+                <img
+                  class="imagemC"
+                  src="img/ventoy.png"
+                  alt="Logo do Ventoy, software para criar pendrives bootáveis"
+                />
+              </a>
             </div>
             <a class="botao" href="ventoy.html">leia mais</a>
           </div>
 
           <div class="card">
             <div class="imagemTexto">
-              <img
-                class="imagemC"
-                src="img/backup.png"
-                alt="Ilustração representando backup de dados no Windows"
-              />
+              <a
+                href="img/backup.png"
+                data-lightbox="cards"
+                data-title="Backup de dados no Windows"
+              >
+                <img
+                  class="imagemC"
+                  src="img/backup.png"
+                  alt="Ilustração representando backup de dados no Windows"
+                />
+              </a>
             </div>
             <a class="botao" href="backupwindows.html">leia mais</a>
           </div>
 
           <div class="card">
             <div class="imagemTexto">
-              <img
-                class="imagemC"
-                src="img/clonarHd.png"
-                alt="Gráfico ilustrativo de clonagem de disco rígido"
-              />
+              <a
+                href="img/clonarHd.png"
+                data-lightbox="cards"
+                data-title="Clonagem de disco rígido"
+              >
+                <img
+                  class="imagemC"
+                  src="img/clonarHd.png"
+                  alt="Gráfico ilustrativo de clonagem de disco rígido"
+                />
+              </a>
             </div>
             <a class="botao" href="clonehd.html">leia mais</a>
           </div>
@@ -85,20 +110,19 @@
       </div>
     </main>
 
-   
- <div id="rodape"></div>
+    <div id="rodape"></div>
 
-<!-- Área para carregar o aviso de cookies -->
-<div id="aviso-cookies"></div>
+    <!-- Área para carregar o aviso de cookies -->
+    <div id="aviso-cookies"></div>
 
-<!-- Scripts JS -->
-<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/lity.min.js"></script>
-<script src="js/wow.min.js"></script>
+    <!-- Scripts JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/lity.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 
-<!-- Seu script com a lógica do cookie e outras animações -->
-<script src="js/animacoes.js" defer></script>
-
+    <!-- Seu script com a lógica do cookie e outras animações -->
+    <script src="js/animacoes.js" defer></script>
   </body>
 </html>
