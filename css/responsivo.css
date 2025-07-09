@@ -381,7 +381,7 @@
 }
 
 /* 1200px para cima */
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
   .menu ul {
     padding: 20px;
   }
