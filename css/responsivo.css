@@ -1,3 +1,9 @@
+/* Global box-sizing para evitar estouro de largura */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 /*
     ##########################
@@ -6,12 +12,9 @@
 */
 @media (max-width: 400px) {
   
-   .texto-sobre{
-    margin: 0 40px;
+  .texto-sobre {
+    margin: 0 15px; /* Margem lateral reduzida */
   }
-  
-  
-  
   
   .conteudo {
     display: flex;
@@ -23,6 +26,7 @@
 
   .fade img {
     height: 215px;
+    max-width: 100%; /* Garante responsividade */
   }
 
   .logo {
@@ -40,36 +44,31 @@
   .tipos,
   .automacao,
   .casos,
-  .dimtech-ajuda{
-   margin: 4px 10px;
+  .dimtech-ajuda {
+    margin: 4px 10px;
   }
 
-  .tituloVent{
-    margin-left: -48px;
+  .tituloVent {
+    margin-left: 0; /* Removida margem negativa */
   }
 
- .menu .subMenu ul {
+  .menu .subMenu ul {
     display: none; /* Esconde o submenu */
   }
 
   .menu .subMenu > a {
-    display: block; /* Garante que o link "Serviços" fique visível */
+    display: block; /* Link visível */
   }
-
-  .problema{
-  margin: 4px 10px;
-  }
-
 
   .noticia-card {
-    flex-direction: column; /* empilha imagem e texto */
-    align-items: center; /* centraliza o conteúdo */
+    flex-direction: column;
+    align-items: center;
   }
 
   .noticia-card img {
-    width: 100%; /* ocupa 100% do card */
-    height: auto; /* altura automática */
-    object-fit: contain; /* mostra a imagem inteira sem cortes */
+    width: 100%;
+    height: auto;
+    object-fit: contain;
   }
 
   .card-conteudo {
@@ -83,25 +82,23 @@
 
   .servicos {
     display: flex;
-    flex-direction: column-reverse; /* empilha */
-    align-items: center; /* centraliza conteúdo horizontalmente */
-    justify-content: center; /* centraliza verticalmente */
-    width: 100%; /* garante largura total */
-    box-sizing: border-box; /* respeita padding/border */
-    padding: 10px; /* espaço interno */
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
   }
 
   .servicostexto {
-    width: 100%; /* ocupa toda a largura no mobile */
-    text-align: center; /* centraliza textos */
-    margin: 0 auto; /* centraliza se sobrar margem */
-    padding: 0 10px; /* espaço interno lateral */
-    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 10px;
   }
 
   .servicosimg {
-    width: 100%; /* ocupa toda a largura */
-    text-align: center; /* imagem centralizada */
+    width: 100%;
+    text-align: center;
     margin-bottom: 15px;
   }
 
@@ -109,31 +106,30 @@
     max-width: 100%;
     height: auto;
     object-fit: contain;
-}
+  }
+
   .servicos h1 {
     margin-top: 10px;
     font-size: 1.6rem;
     line-height: 1.3;
     text-align: center;
-    margin: 10px -30px;
+    margin: 10px -15px;
     padding: 0 10px;
   }
-  .backup00{
 
-    margin: -90px 0px 90px 5px;
+  .backup00 {
+    margin: 0; /* Removido margem negativa */
   }
 
- .mainResponsive {
-  padding: 0 15px;
-  box-sizing: border-box;
-}
+  .mainResponsive {
+    padding: 0 15px;
+  }
 
-.cookie-container p {
-    margin: 0px;
+  .cookie-container p {
+    margin: 0;
     display: inline;
+  }
 }
-}
-
 
 /*
     ##########################
@@ -143,77 +139,70 @@
 
 @media (max-width: 600px) {
   
-  
   .site {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .logo {
-    margin-bottom: 10px; /* espaço entre logo e menu */
+    margin-bottom: 10px;
   }
 
   .menu {
-    justify-content: center; /* centraliza o menu horizontalmente */
+    justify-content: center;
   }
 
   .menu ul {
-    flex-direction: column; /* empilha os itens do menu se quiser em coluna */
+    flex-direction: column;
     align-items: center;
-    gap: 10px; /* espaço entre os itens */
+    gap: 10px;
   }
 
- 
   .slick-prev,
   .slick-next {
     display: none !important;
   }
-  .container{
-    margin: 0px 5px;
-    padding: 55px;
+
+  .container {
+    margin: 0 5px;
+    padding: 15px; /* Padding reduzido */
   }
 
-  .servicos{
-   flex-direction: column-reverse;
-   margin: auto 12px;
-   border-radius: 5px 5px;
+  .servicos {
+    flex-direction: column-reverse;
+    margin: auto 12px;
+    border-radius: 5px 5px;
   }
   figure.servicosimg figcaption {
     display: none;
   }
 
-  .mainResponsive{
+  .mainResponsive {
     background-color: #1b4350;
   }
 
   .menu .subMenu ul {
-    display: none; /* Esconde o submenu */
+    display: none;
   }
 
   .menu .subMenu > a {
-    display: block; /* Garante que o link "Serviços" fique visível */
+    display: block;
   }
-
 
   .img-sobre {
     width: 80%;
+    max-width: 100%;
   }
   .bloco-img {
     width: 45%;
   }
 
-
-
-
-  
-
   .servicosimg img {
     width: 100%;
     height: auto;
-    object-fit: contain; /* Isso ajuda a manter a proporção sem distorcer */
-}
+    object-fit: contain;
+  }
 
-  /* Ajustes nos textos */
   .servicostexto p,
   .servicostexto h2,
   .servicostexto ul {
@@ -221,20 +210,17 @@
     padding-right: 10px;
   }
 
-  /* Ajustes do título */
   .h1serve {
     font-size: 1.5rem;
     text-align: center;
   }
 
-  /* Ajustar o alinhamento das listas */
   .servicostexto ul {
     list-style-type: disc;
     margin-left: 20px;
     font-size: 0.9rem;
   }
 
-  /* Ajuste do espaço nas laterais das imagens */
   .servicosimg img {
     width: 100%;
     height: auto;
@@ -243,17 +229,10 @@
     padding-right: 10px;
   }
 
-  /* Ajustes nos botões de ação */
   .acoes-servico .btn-cta {
     width: 80%;
     margin: 0 10px;
   }
-
-
-
-
-
-
 }
 
 /*
@@ -266,18 +245,26 @@
     display: none !important;
   }
 
-.img-sobre {
+.menu {
+  position: relative;
+  z-index: 10;
+}
+
+
+  
+  .img-sobre {
     width: 60%;
+    max-width: 100%;
   }
 
-
-.texto-sobre{
-    margin: 0 40px;
+  .texto-sobre {
+    margin: 0 15px; /* Reduzido para evitar overflow */
   }
+
   .flex-imagens {
     padding: 0 20px;
     box-sizing: border-box;
-    gap: 20px; /* espaçamento entre os blocos, se forem lado a lado */
+    gap: 20px;
   }
 
   .bloco-img img {
@@ -286,22 +273,19 @@
     display: block;
   }
 
-
-
- .menu .subMenu ul {
-    display: none; /* Esconde o submenu */
+  .menu .subMenu ul {
+    display: none;
   }
 
   .menu .subMenu > a {
-    display: block; /* Garante que o link "Serviços" fique visível */
+    display: block;
   }
- 
 
-  .topoRedeSocial{
-    padding: 0px 15px;
+  .topoRedeSocial {
+    padding: 0 15px;
   }
-  .email{
-    padding: 0px 15px;
+  .email {
+    padding: 0 15px;
   }
 
   .menu {
@@ -310,6 +294,7 @@
 
   .banner {
     width: 80%;
+    max-width: 100%;
   }
 
   .conteudo {
@@ -319,35 +304,30 @@
     align-content: center;
   }
 
-  /* Página Sobre */
-  .textosobre{
-    margin: 0 15px ;
+  .textosobre {
+    margin: 0 15px;
   }
-  .banner{
-    max-width: 100%;
-  width: 100%; 
-}
 
- .servicos{
-   flex-direction: column-reverse;
-   margin: auto 12px;
-   border-radius: 5px 5px;
+  .servicos {
+    flex-direction: column-reverse;
+    margin: auto 12px;
+    border-radius: 5px 5px;
   }
+
   figure.servicosimg figcaption {
     display: none;
   }
 
-  .mainResponsive{
+  .mainResponsive {
     background-color: #1b4350;
   }
 
-   .servicosimg img {
+  .servicosimg img {
     width: 100%;
     height: auto;
-    object-fit: contain; /* Isso ajuda a manter a proporção sem distorcer */
-}
+    object-fit: contain;
+  }
 
-  /* Ajustes nos textos */
   .servicostexto p,
   .servicostexto h2,
   .servicostexto ul {
@@ -355,7 +335,6 @@
     padding-right: 10px;
   }
 
-  /* Ajustes do título */
   .h1serve {
     font-size: 1.5rem;
     text-align: center;
@@ -363,15 +342,12 @@
     margin: 14px -1px;
   }
 
-
-  /* Ajustar o alinhamento das listas */
   .servicostexto ul {
     list-style-type: disc;
     margin-left: 20px;
     font-size: 0.9rem;
   }
-   
-  /* Ajuste do espaço nas laterais das imagens */
+
   .servicosimg img {
     width: 100%;
     height: auto;
@@ -380,12 +356,10 @@
     padding-right: 10px;
   }
 
-  /* Ajustes nos botões de ação */
   .acoes-servico .btn-cta {
     width: 80%;
     margin: 0 10px;
   }
- 
 
   .noticiaCards,
   .problema,
@@ -393,30 +367,22 @@
   .tipos,
   .automacao,
   .casos,
-  .dimtech-ajuda{
-   margin: 10px 16px;
+  .dimtech-ajuda {
+    margin: 10px 16px;
   }
 
-  .form-contato{
-    margin: 0px 10px;
+  .form-contato {
+    margin: 0 10px;
   }
 
-  .container{
+  .container {
     margin: 4px 9px;
-    
   }
 }
 
-  @media (max-width: 1200px){
-    .menu ul {
-      padding: 20px;
-    }
-
-    
+/* 1200px para cima */
+@media (max-width: 1200px) {
+  .menu ul {
+    padding: 20px;
   }
-
-
-
-
-
-/* End of Tablets Media Query */
+}
