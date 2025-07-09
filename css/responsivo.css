@@ -385,4 +385,9 @@
   .menu ul {
     padding: 20px;
   }
+
+  .conteudo{
+    padding: 50px 0;
+    margin: 50px 80px;
+  }
 }
