@@ -172,49 +172,50 @@ header div h1 {
   margin-bottom: 20px;
   font-weight: bold;
 }
-.contSobre h3{
-  color:#041e47;
+
+.contSobre h3 {
+  color: #041e47;
   font-size: 1.5em;
   margin-bottom: 10px;
   text-transform: uppercase;
   font-weight: bold;
 }
 
+.img-sobre {
+  width: 35%;
+  max-width: 500px;
+  border-radius: 25px;
+  margin: 0 auto 20px; 
+  display: block;
+}
 
-.contSobre div div {
+.texto-sobre {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+
+
+.flex-imagens {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.contSobre div div div {
-  width: 48%;
-  padding: 0 25px;
+.bloco-img {
+  width: 30%;
+  min-width: 200px;
+  text-align: center;
 }
 
-.contSobre img {
+.bloco-img img {
   width: 100%;
-  border-radius: 25px 0px 0px 25px;
-}
-
-.contSobre div div div:nth-child(1) {
-  padding-left: 25px;
-}
-
-.contSobre div div div:nth-child(2) {
-  flex-direction: column;
-  padding-right: 25px;
-  justify-content: space-between;
-  background: #1db1d0;
-  border-radius: 0px 50px 50px 0px;
-}
-
-.contSobre p {
-  text-align: justify;
-  color: #041e47;
-  font-size: 1.2em;
-  line-height: 1.8em;
-  text-indent: 2em;
-  margin-top: 3%;
+  max-width: 300px;
+  border-radius: 25px;
 }
 
 
