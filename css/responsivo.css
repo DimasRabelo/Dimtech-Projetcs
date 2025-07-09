@@ -391,3 +391,15 @@
     margin: 50px 80px;
   }
 }
+
+@media (min-width: 1601px) {
+     .menu ul {
+    padding: 20px;
+  }
+
+  .conteudo{
+    padding: 50px 0;
+    margin: 50px 80px;
+  }
+ 
+}
