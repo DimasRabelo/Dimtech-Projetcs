@@ -975,3 +975,11 @@ article p {
   margin-left: 20px;
   margin-top: 10;
 }
+
+/* videos tutoriais */
+
+.video-container {
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    margin: 20px 0; /* opcional: espaço acima e abaixo */
+}
