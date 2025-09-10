@@ -68,3 +68,26 @@ $(document).ready(function () {
     });
   }
 });
+// Adicionar links "Veja também" dinamicamente
+const vejaMaisLinks = [
+    { href: 'backupwindows.html', texto: 'Veja também como criar backup no Windows' },
+    { href: 'clonehd.html', texto: 'Veja também como clonar HD' },
+    { href: 'ventoy.html', texto: 'Veja também como usar Ventoy' },
+    { href: 'tutorias.html', texto: 'Veja também outros tutoriais' }
+  ];
+
+  // Página atual
+  const paginaAtual = window.location.pathname.split("/").pop();
+
+  // Div onde os links vão aparecer
+  const container = document.getElementById('veja-mais');
+
+  // Criar links, exceto o da página atual
+  vejaMaisLinks.forEach(link => {
+    if(link.href !== paginaAtual){
+      const p = document.createElement('p');
+      p.className = 'vejaMaisGeral';
+      p.innerHTML = `<a href="${link.href}">${link.texto}</a>`;
+      container.appendChild(p);
+    }
+  });

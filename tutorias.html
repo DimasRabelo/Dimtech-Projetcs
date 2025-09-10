@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tutoriais em vídeo passo a passo para instalar e configurar softwares como GitHub Desktop no Linux e AdGuard no iPhone." />
+  <meta name="keywords" content="tutorial, vídeo, GitHub Desktop, Linux, AdGuard, iPhone, passo a passo" />
+  <meta name="author" content="DimTech" />
+  <title>Tutoriais em Vídeo – DimTech</title>
+
+  <!-- Fonts e CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/estilo.css" />
+  <link rel="stylesheet" href="css/responsivo.css" />
+  <link rel="icon" href="img/favicon.ico" />
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4383742708342701" crossorigin="anonymous"></script>
+
+  
+</head>
+<body>
+  <!-- Menu -->
+  <div id="menu"></div>
+
+  <!-- Cabeçalho -->
+  <header class="cabecalho">
+    <img src="img/backup-logo.png" alt="Logo DimTech" class="logo animate__animated animate__bounce" />
+    <h1 class="tituloVent">Tutoriais em Vídeos</h1>
+  </header>
+
+  <!-- Anúncio Topo -->
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-4383742708342701"
+       data-ad-slot="9195259275"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+  <!-- Conteúdo Principal -->
+  <main class="container">
+
+    <!-- Tutorial 1: GitHub Desktop -->
+    <section>
+      <h2 class="tituloVent">Como instalar o GitHub Desktop no Linux</h2>
+      <p>Aprenda passo a passo a instalar o <strong>GitHub Desktop no Linux</strong> usando comandos no terminal. Ideal para desenvolvedores e usuários que querem gerenciar seus repositórios Git de forma prática.</p>
+      
+      <div class="video-wrapper">
+        <iframe width="100%" height="480" 
+                src="https://www.youtube.com/embed/J2GDztb8rkY" 
+                title="Instalar GitHub Desktop no Linux" 
+                frameborder="0" 
+                allowfullscreen 
+                loading="lazy"></iframe>
+      </div>
+
+      <h3>Comandos de Instalação</h3>
+      <ol>
+        <li>Baixar o pacote .deb via terminal:
+          <pre><code>wget https://github.com/shiftkey/desktop/releases/download/release-version/GitHubDesktop-linux-amd64-3.3.12-linux1.deb</code></pre>
+        </li>
+        <li>Instalar o pacote:
+          <pre><code>sudo apt install ./GitHubDesktop-linux-amd64-3.3.12-linux1.deb</code></pre>
+        </li>
+        <li>Corrigir dependências (caso apareça erro):
+          <pre><code>sudo apt --fix-broken install</code></pre>
+        </li>
+        <li>Abrir o GitHub Desktop pelo menu de aplicativos ou terminal:
+          <pre><code>github-desktop</code></pre>
+        </li>
+      </ol>
+    </section>
+
+    
+
+    <!-- Tutorial 2: AdGuard iPhone -->
+    <section>
+      <h2 class="tituloVent">Como configurar AdGuard no iPhone</h2>
+      <p>Aprenda a configurar o <strong>AdGuard no iPhone</strong> diretamente pelo perfil do site oficial. Ideal para bloquear anúncios e proteger sua navegação.</p>
+      
+      <div class="video-wrapper">
+        <iframe width="100%" height="480" 
+                src="https://www.youtube.com/embed/Z6J4q_0fxHs" 
+                title="Configurar AdGuard no iPhone" 
+                frameborder="0" 
+                allowfullscreen 
+                loading="lazy"></iframe>
+      </div>
+
+      <h3>Passo a Passo</h3>
+      <ol>
+        <li>Acesse o site oficial do AdGuard no Safari do seu iPhone.</li>
+        <li>Baixe o perfil de configuração fornecido pelo site.</li>
+        <li>Vá em <strong>Ajustes → Geral → Perfis</strong> e instale o perfil baixado.</li>
+        <li>Ative o perfil para permitir o bloqueio de anúncios.</li>
+        <li>Reinicie o Safari ou apps que deseja proteger para aplicar as configurações.</li>
+      </ol>
+    </section>
+
+  </main>
+
+  <!-- Anúncio Rodapé -->
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-4383742708342701"
+       data-ad-slot="YYYYY" 
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
+<div id="veja-mais"></div>
+
+  <!-- Rodapé -->
+ <div id="rodape"></div>
+    
+ 
+ <!-- Área para carregar o aviso de cookies -->
+    <div id="aviso-cookies"></div>
+
+    <!-- Scripts JS -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/lity.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+    <!-- Seu script com a lógica do cookie e outras animações -->
+    <script src="js/animacoes.js" defer></script>
+</body>
+</html>

@@ -977,3 +977,20 @@ article p {
 }
 
 
+/* Link Vejas Mais */
+
+ .vejaMaisGeral {
+  text-align: center; /* centraliza o texto/link dentro do <p> */
+  margin-top: 10px;   /* opcional, deixa um espaçamento em cima */
+  font-size: 16px;    /* opcional, define tamanho do texto */
+}
+
+.vejaMaisGeral a {
+  color: #1d9bc1;
+  text-decoration: underline;
+}
+
+.vejaMaisGeral a:hover {
+  color: #6ba80a;;
+}
+/* Fim do Link Vejas Mais */
