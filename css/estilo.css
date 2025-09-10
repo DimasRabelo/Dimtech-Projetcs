@@ -976,7 +976,4 @@ article p {
   margin-top: 10;
 }
 
-.adsbygoogle {
-  display: block !important;
-  min-height: 250px; /* garante espaço pro anúncio no desktop */
-}
+
