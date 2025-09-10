@@ -4,72 +4,84 @@
     ### Smartphones: 0 até 400
     ##########################
 */
-@media (max-width: 400px) {
+
   
-   .texto-sobre{
-    margin: 0 40px;
+
+ @media (max-width: 400px) {
+
+  /* impede scroll lateral só no index */
+  body.index {
+    overflow-x: hidden;
   }
-  
-  
-  
-  
+
+  /* margem do texto sobre */
+  .texto-sobre {
+    margin: 0 10px; /* reduzido (era 40px) */
+  }
+
+  /* grid principal da página inicial */
   .conteudo {
     display: flex;
     flex-direction: column;
     gap: 15px;
     align-items: center;
-    padding: 20px;
+
+    padding: 10px;       /* reduzido (era 50px) */
+    max-width: 100%;     /* garante que ocupe toda a tela */
+    box-sizing: border-box;
   }
 
-  .fade img {
-    height: 215px;
+  /* imagens do index */
+  .fade img,
+  .imagemC,
+  .servicosimg img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
   }
 
+  /* título que estava empurrando pro lado */
+  .tituloVent {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /* ajuste do logo */
   .logo {
     width: 100%;
   }
 
+  /* seta do slick some no mobile */
   .slick-prev,
   .slick-next {
     display: none !important;
   }
 
+  /* espaçamento em seções */
   .noticiaCards,
   .problema,
   .conceito,
   .tipos,
   .automacao,
   .casos,
-  .dimtech-ajuda{
-   margin: 4px 10px;
+  .dimtech-ajuda {
+    margin: 4px 10px;
   }
 
-  .tituloVent{
-    margin-left: -48px;
+  .problema {
+    margin: 4px 10px;
   }
 
- .menu .subMenu ul {
-    display: none; /* Esconde o submenu */
-  }
-
-  .menu .subMenu > a {
-    display: block; /* Garante que o link "Serviços" fique visível */
-  }
-
-  .problema{
-  margin: 4px 10px;
-  }
-
-
+  /* cards de notícia em coluna */
   .noticia-card {
-    flex-direction: column; /* empilha imagem e texto */
-    align-items: center; /* centraliza o conteúdo */
+    flex-direction: column;
+    align-items: center;
   }
 
   .noticia-card img {
-    width: 100%; /* ocupa 100% do card */
-    height: auto; /* altura automática */
-    object-fit: contain; /* mostra a imagem inteira sem cortes */
+    width: 100%;
+    height: auto;
+    object-fit: contain;
   }
 
   .card-conteudo {
@@ -77,39 +89,48 @@
     text-align: center;
   }
 
+  /* menus no mobile */
+  .menu .subMenu ul {
+    display: none;
+  }
+
+  .menu .subMenu > a {
+    display: block;
+  }
+
   .menu ul li a:active {
     color: #41905f;
   }
 
+  /* seção serviços */
+
+  .servicos-grid {
+    padding: 7px;
+  }
   .servicos {
     display: flex;
-    flex-direction: column-reverse; /* empilha */
-    align-items: center; /* centraliza conteúdo horizontalmente */
-    justify-content: center; /* centraliza verticalmente */
-    width: 100%; /* garante largura total */
-    box-sizing: border-box; /* respeita padding/border */
-    padding: 10px; /* espaço interno */
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
   }
 
   .servicostexto {
-    width: 100%; /* ocupa toda a largura no mobile */
-    text-align: center; /* centraliza textos */
-    margin: 0 auto; /* centraliza se sobrar margem */
-    padding: 0 10px; /* espaço interno lateral */
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 10px;
     box-sizing: border-box;
   }
 
   .servicosimg {
-    width: 100%; /* ocupa toda a largura */
-    text-align: center; /* imagem centralizada */
+    width: 100%;
+    text-align: center;
     margin-bottom: 15px;
   }
 
-  .servicosimg img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-}
   .servicos h1 {
     margin-top: 10px;
     font-size: 1.6rem;
@@ -118,22 +139,22 @@
     margin: 10px -30px;
     padding: 0 10px;
   }
-  .backup00{
 
+  /* outros ajustes */
+  .backup00 {
     margin: -90px 0px 90px 5px;
   }
 
- .mainResponsive {
-  padding: 0 15px;
-  box-sizing: border-box;
-}
+  .mainResponsive {
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
 
-.cookie-container p {
+  .cookie-container p {
     margin: 0px;
     display: inline;
+  }
 }
-}
-
 
 /*
     ##########################
