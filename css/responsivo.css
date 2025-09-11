@@ -7,89 +7,90 @@
 
   
 
- @media (max-width: 400px) {
-
-  /* impede scroll lateral só no index */
+@media (max-width: 400px) {
+  /* impede scroll lateral */
   body.index {
     overflow-x: hidden;
   }
 
-  /* margem do texto sobre */
-  .texto-sobre {
-    margin: 0 10px; /* reduzido (era 40px) */
+  /* Container principal */
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
   }
 
-  /* grid principal da página inicial */
+  /* Cabeçalho */
+  .cabecalho {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .logo {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Corrige título */
+  .tituloVent {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto !important;
+    text-align: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+  }
+
+  /* Grid principal da página inicial */
   .conteudo {
     display: flex;
     flex-direction: column;
     gap: 15px;
     align-items: center;
-
-    padding: 10px;       /* reduzido (era 50px) */
-    max-width: 100%;     /* garante que ocupe toda a tela */
+    padding: 10px;
+    max-width: 100%;
     box-sizing: border-box;
   }
 
-  /* imagens do index */
+  /* Imagens e vídeos */
   .fade img,
   .imagemC,
-  .servicosimg img {
+  .servicosimg img,
+  .video-wrapper iframe {
     max-width: 100%;
     height: auto;
     object-fit: contain;
   }
 
-  /* título que estava empurrando pro lado */
-  .tituloVent {
-    margin-left: 0;
-    text-align: center;
-  }
-
-  /* ajuste do logo */
-  .logo {
-    width: 100%;
-  }
-
-  /* seta do slick some no mobile */
-  .slick-prev,
-  .slick-next {
-    display: none !important;
-  }
-
-  /* espaçamento em seções */
+  /* Seções e cards */
   .noticiaCards,
   .problema,
   .conceito,
   .tipos,
   .automacao,
   .casos,
-  .dimtech-ajuda {
+  .dimtech-ajuda,
+  .problema,
+  .servicos,
+  .servicostexto,
+  .servicosimg,
+  .card-conteudo {
     margin: 4px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
   }
 
-  .problema {
-    margin: 4px 10px;
-  }
-
-  /* cards de notícia em coluna */
   .noticia-card {
     flex-direction: column;
     align-items: center;
   }
 
-  .noticia-card img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
-
-  .card-conteudo {
-    padding: 10px;
-    text-align: center;
-  }
-
-  /* menus no mobile */
+  /* Menus mobile */
   .menu .subMenu ul {
     display: none;
   }
@@ -102,45 +103,13 @@
     color: #41905f;
   }
 
-  /* seção serviços */
-
-  .servicos-grid {
-    padding: 7px;
-  }
-  .servicos {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px;
+  /* Slick arrows */
+  .slick-prev,
+  .slick-next {
+    display: none !important;
   }
 
-  .servicostexto {
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
-    padding: 0 10px;
-    box-sizing: border-box;
-  }
-
-  .servicosimg {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 15px;
-  }
-
-  .servicos h1 {
-    margin-top: 10px;
-    font-size: 1.6rem;
-    line-height: 1.3;
-    text-align: center;
-    margin: 10px -30px;
-    padding: 0 10px;
-  }
-
-  /* outros ajustes */
+  /* Outros ajustes */
   .backup00 {
     margin: -90px 0px 90px 5px;
   }
@@ -151,7 +120,7 @@
   }
 
   .cookie-container p {
-    margin: 0px;
+    margin: 0;
     display: inline;
   }
 }
