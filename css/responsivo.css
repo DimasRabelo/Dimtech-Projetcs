@@ -7,34 +7,63 @@
 
   
 
+/* ==============================
+   CSS Responsivo - iPhone 7 / ≤400px
+   ============================== */
 @media (max-width: 400px) {
-  /* impede scroll lateral */
+
+  /* ==============================
+     Evita scroll horizontal
+  ============================== */
+  html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
   body.index {
     overflow-x: hidden;
   }
 
-  /* Container principal */
-  .container {
+  /* ==============================
+     Containers principais
+  ============================== */
+  .container,
+  .cabecalho,
+  .conteudo,
+  .servicos,
+  .servicostexto,
+  .servicosimg,
+  .noticiaCards,
+  .noticia-card,
+  .card-conteudo {
     width: 100%;
     max-width: 100%;
-    padding: 0 10px;
-    box-sizing: border-box;
-  }
-
-  /* Cabeçalho */
-  .cabecalho {
-    width: 100%;
     padding: 0 10px;
     box-sizing: border-box;
     text-align: center;
   }
 
-  .logo {
-    max-width: 100%;
-    height: auto;
+  /* ==============================
+     Cabeçalho e logo
+  ============================== */
+  .cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
   }
 
-  /* Corrige título */
+  .logo {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* ==============================
+     Títulos principais
+  ============================== */
   .tituloVent {
     width: 100%;
     max-width: 100%;
@@ -43,20 +72,48 @@
     padding: 0 10px;
     box-sizing: border-box;
     overflow-wrap: break-word;
+    font-size: 1.4rem; /* ajuste se necessário */
   }
 
-  /* Grid principal da página inicial */
+  h2.tituloVent {
+    font-size: 1.2rem;
+  }
+
+  /* ==============================
+     Grid principal e seções
+  ============================== */
   .conteudo {
     display: flex;
     flex-direction: column;
     gap: 15px;
     align-items: center;
     padding: 10px;
-    max-width: 100%;
-    box-sizing: border-box;
   }
 
-  /* Imagens e vídeos */
+  .noticia-card,
+  .problema,
+  .conceito,
+  .tipos,
+  .automacao,
+  .casos,
+  .dimtech-ajuda,
+  .servicos,
+  .servicostexto,
+  .servicosimg,
+  .card-conteudo {
+    margin: 5px 0;
+    width: 100%;
+  }
+
+  /* ==============================
+     Imagens e vídeos
+  ============================== */
+  img, iframe, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
   .fade img,
   .imagemC,
   .servicosimg img,
@@ -66,31 +123,9 @@
     object-fit: contain;
   }
 
-  /* Seções e cards */
-  .noticiaCards,
-  .problema,
-  .conceito,
-  .tipos,
-  .automacao,
-  .casos,
-  .dimtech-ajuda,
-  .problema,
-  .servicos,
-  .servicostexto,
-  .servicosimg,
-  .card-conteudo {
-    margin: 4px 10px;
-    width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-  }
-
-  .noticia-card {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* Menus mobile */
+  /* ==============================
+     Menus mobile
+  ============================== */
   .menu .subMenu ul {
     display: none;
   }
@@ -103,15 +138,48 @@
     color: #41905f;
   }
 
-  /* Slick arrows */
+  /* ==============================
+     Slick arrows (remover no mobile)
+  ============================== */
   .slick-prev,
   .slick-next {
     display: none !important;
   }
 
-  /* Outros ajustes */
+  /* ==============================
+     Ajustes de seções específicas
+  ============================== */
+  .servicos {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .servicostexto {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .servicosimg {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .servicos h1 {
+    margin: 10px 0;
+    font-size: 1.6rem;
+    line-height: 1.3;
+    text-align: center;
+    padding: 0 10px;
+  }
+
   .backup00 {
-    margin: -90px 0px 90px 5px;
+    margin: -90px 0 90px 5px;
   }
 
   .mainResponsive {
@@ -123,6 +191,7 @@
     margin: 0;
     display: inline;
   }
+
 }
 
 /*
