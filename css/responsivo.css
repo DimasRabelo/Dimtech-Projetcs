@@ -27,21 +27,24 @@
   /* ==============================
      Containers principais
   ============================== */
-  .container,
-  .cabecalho,
-  .conteudo,
-  .servicos,
-  .servicostexto,
-  .servicosimg,
-  .noticiaCards,
-  .noticia-card,
-  .card-conteudo {
-    width: 100%;
-    max-width: 100%;
-    padding: 0 10px;
-    box-sizing: border-box;
-    text-align: center;
-  }
+.container,
+.cabecalho,
+.conteudo,
+.servicos,
+.servicostexto,
+.servicosimg,
+.noticiaCards,
+.noticia-card,
+.card-conteudo {
+  max-width: 100%;          /* nunca ultrapassa a tela */
+  width: auto;              /* deixa o container flexível */
+  margin-left: 15px;        /* espaço esquerdo */
+  margin-right: 15px;       /* espaço direito */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
 
   /* ==============================
      Cabeçalho e logo
