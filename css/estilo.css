@@ -510,7 +510,7 @@ main {
 }
 
 .noticia-card img {
-  width: 150px;
+  width: 195px;
   height: auto;
   object-fit: cover;
 }
@@ -530,6 +530,22 @@ main {
   font-size: 1em;
   color: #333;
 }
+
+ .cta-leiamais {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #1b8018;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+.cta-leiamais:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+
+
 /* Fim da página Artigos */
 
 /* Página de Contato */
