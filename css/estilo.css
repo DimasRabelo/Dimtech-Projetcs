@@ -22,6 +22,10 @@ a {
   font-family: "Oswald", sans-serif;
 }
 
+.adsbygoogle[data-anchor-status] {
+  display: none !important;
+}
+
 .anuncio {
   margin: 30px auto;
   text-align: center;
